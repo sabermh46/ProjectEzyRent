@@ -57,6 +57,10 @@ body {
     position: relative;
     backface-visibility: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .links .link2 {
     border-radius: 3px;
@@ -702,11 +706,6 @@ body {
         font-size: 12px;
     }
     
-    
-    
-
-    
-    
     .section8 {
         flex-direction: column;
         align-items: center;
@@ -729,10 +728,7 @@ body {
         bottom: 30px;
         margin-left: 30px;
     }
-
     .pad {
         padding-top: 80px;
     }
-
-    
 }
