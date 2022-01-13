@@ -1,0 +1,145 @@
+.container1 {
+    width: 100%;
+}
+.container90 {
+    width: 90%;
+}
+.container80 {
+    width: 80%;
+}
+.container70 {
+    width: 70%;
+}
+.container60 {
+    width: 60%;
+}
+.tbc90, .container90, .container80, .container70, .container60 {
+    margin:  60px auto;
+    position: relative;
+}
+.tbc90 {
+    width: 90%;
+}
+
+
+
+
+.flex {
+    display: flex;
+}
+.absolute {
+    position: absolute;
+}
+
+
+
+.btn {
+    position: relative;
+    border: none;
+    height: 50px;
+    width: auto;
+    padding: 0 15px;
+    font-size: 20px;
+    transition: 0.5s;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+    margin: 5px;
+    z-index: 40;
+}
+.grad::before, .grad::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+.grad::after {
+    opacity: 0.9;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+.grad:hover::after {
+    transform: scaleX(1);
+}
+.ltr::after {
+    transform-origin: 0 0;
+}
+.rtl::after {
+    transform-origin: 100% 0%;
+}
+
+.grad1::before {
+    background: white;
+}
+.grad1::after {
+    background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
+}
+
+.grad2::before {
+    background: rgb(107, 179, 238);
+}
+.grad2::after {
+    background: linear-gradient(to left, #d2da6d, #cf89c4, #fa5235);
+}
+
+.grad3::before {
+    background: rgb(139, 206, 94);
+}
+.grad3::after {
+    background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
+}
+
+
+@media (max-width: 800px) {
+    .btn {
+        height: auto;
+        width: auto;
+        padding: 15px 15px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 500px) {
+    .btn {
+        height: auto;
+        width: auto;
+        padding: 15px 15px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+.blue {
+    color: #4158D0;
+}
+
+
+.ttip-anim {
+    animation: tooltip 1s ease 0s 1;
+}
+@keyframes tooltip {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    70% {
+        opacity: 0.7;
+        transform: scale(0.7) rotate(-20deg);
+    }
+    90% {
+        opacity: 0.9;
+        transform: scale(0.9) rotate(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
