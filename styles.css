@@ -48,6 +48,10 @@ body {
     line-height: 72px;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .links .link1 {
     color: white;
@@ -57,10 +61,6 @@ body {
     position: relative;
     backface-visibility: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .links .link2 {
     border-radius: 3px;
