@@ -640,7 +640,7 @@ body {
 @media (max-width: 800px) {
     .navigation {
         width: 90%;
-        padding: 100px 20px;
+        padding: 100px 5%;
     }
     .navigation .links
     {
@@ -789,11 +789,9 @@ body {
         width: 100%;
     }
     .up {
-        font-size: 25px;
-        line-height: 40px;
-        bottom: 30px;
-        margin-left: 30px;
+        margin-left: 90%;
     }
+
     .pad {
         padding-top: 30px;
     }
