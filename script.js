@@ -26,7 +26,7 @@
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px)");
     var mb = window.matchMedia("(max-width: 500px)");
-
+ 
 window.addEventListener('scroll', function() {
 
     
@@ -46,12 +46,14 @@ window.addEventListener('scroll', function() {
     if(pc.matches){
         pic1.style.transform = 'translateY(-' + scrollNav*2.5 + 'px)';
 
-        if(scrollNav > 15)
+
+        if(scrollNav <= 23.3333)
+        {
+            nav.style.padding = 80 - scrollNav*3 + 'px 20px';
+        }
+        else if(scrollNav > 23.333)
         {
             nav.style.padding = '10px 20px';
-        }
-        else {
-            nav.style.padding = '100px 20px';
         }
         if(sec2 < 800)
         {
