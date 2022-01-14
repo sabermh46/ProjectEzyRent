@@ -135,7 +135,7 @@ body {
 }
 .part1 h1 {
     font-weight: 500;
-    font-size: 60px;
+    font-size: 4vw;
     line-height: 107%;
     letter-spacing: -1px;
     color: #FFFFFF;
@@ -226,7 +226,6 @@ body {
 }
 .dummy2 {
     height: 120vh;
-    width: 100px;
 }
 
 
@@ -669,7 +668,7 @@ body {
         font-size: 14px;
     }
     .fd23 {
-        height: 200px;
+        visibility: hidden;
     }
     
 
@@ -796,6 +795,12 @@ body {
         margin-left: 30px;
     }
     .pad {
-        padding-top: 80px;
+        padding-top: 30px;
+    }
+    .dummy2, .dummy3 {
+        height: 80vh;
+    }
+    .fd33 {
+        visibility: hidden;
     }
 }
