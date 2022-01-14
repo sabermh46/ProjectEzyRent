@@ -168,12 +168,13 @@ window.addEventListener('scroll', function() {
     else if(tb.matches)
     {
 
-        if(scrollNav > 15)
+        if(scrollNav <= 13.3333)
         {
-            nav.style.padding = '10px 4%';
+            nav.style.padding = 60 - scrollNav*3 + 'px 20px';
         }
-        else {
-            nav.style.padding = '60px 4%';
+        else if(scrollNav > 13.333)
+        {
+            nav.style.padding = '10px 20px';
         }
         if(sec2 < scrollArea)
         {
@@ -190,7 +191,7 @@ window.addEventListener('scroll', function() {
 
         if(sec3 < scrollArea)
         {
-            var ev13 = ev3*1.2;
+            var ev13 = ev3 - 50;
             section2.style.opacity = 1;
             img3.style.transform = 'translateY(-' + ev13 + 'px)';
         }
