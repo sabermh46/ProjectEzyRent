@@ -170,10 +170,10 @@ window.addEventListener('scroll', function() {
 
         if(scrollNav > 15)
         {
-            nav.style.padding = '10px 5%';
+            nav.style.padding = '10px 4%';
         }
         else {
-            nav.style.padding = '100px 5%';
+            nav.style.padding = '60px 4%';
         }
         if(sec2 < scrollArea)
         {
