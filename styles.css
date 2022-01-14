@@ -535,8 +535,8 @@ body {
     text-align: center;
     line-height: 40px;
     cursor: pointer;
+    margin-left: 95%;
     bottom: 30px;
-    margin-left: 30px;
     transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     visibility: hidden;
 }
