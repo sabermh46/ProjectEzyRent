@@ -55,13 +55,13 @@ body {
 .links .link1 {
     color: white;
     border: 2px solid rgb(39, 39, 39);
-    border-radius: 6px;
+    border-radius: 1px;
     margin-right: 30px;
     position: relative;
     backface-visibility: hidden;
 }
 .links .link2 {
-    border-radius: 3px;
+    border-radius: 1px;
     background: transparent;
     color: black;
     transition: 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -75,7 +75,7 @@ body {
     top: 0;
     right: 0;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 1px;
     background: white;
 }
 .links .link2::after {
@@ -93,7 +93,7 @@ body {
    content: "";
    width: inherit;
    height: 70px;
-   background: rgb(212, 28, 68);
+   background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
    position: absolute;
     top: 0;
     left: 0;
@@ -101,7 +101,7 @@ body {
     transform-origin: 100% 50%;
     transform: translateX(-2px) scaleX(0);
     border-radius: 5px;
-    transition: 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .links .link1:hover::before {
     transform: translateX(-2px) scaleX(1);
@@ -279,9 +279,9 @@ body {
     justify-content: center;
     align-items: center;
     aspect-ratio: 2.6;
-    background: url('pic/tooltip.png');
+    background: url('pic/ttipR.png');
     background-color: transparent;
-    background-size: 100% 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 100%;
     transform-origin: 40% 100%;
@@ -296,13 +296,13 @@ body {
     left: 38%;
 }
 .item2 {
-    background: url('pic/tooltipR.png');
-    background-size: 100% 120%;
+    background: url('pic/ttipL.png');
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 100%;
     transform-origin: 60% 100%;
     top: 40%;
-    left: 0%;
+    left: -5%;
 }
 .item3 {
     top: 34%;
