@@ -44,9 +44,6 @@ window.addEventListener('scroll', function() {
     var top = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(pc.matches){
-        pic1.style.transform = 'translateY(-' + scrollNav*2.5 + 'px)';
-
-
         if(scrollNav <= 23.3333)
         {
             nav.style.padding = 80 - scrollNav*3 + 'px 20px';
@@ -170,7 +167,6 @@ window.addEventListener('scroll', function() {
     }
     else if(tb.matches)
     {
-        pic1.style.transform = 'translateY(-' + scrollNav*2.5 + 'px)';
 
         if(scrollNav > 15)
         {
