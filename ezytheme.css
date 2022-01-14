@@ -47,6 +47,54 @@
     margin: 5px;
     z-index: 40;
 }
+.cntc-btn {
+    background: #5D5DFF;
+    height: 50px;
+    width: auto;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cntc {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0;
+}
+.cntc::before, .cntc::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.cntc::after {
+    opacity: 0.9;
+    transform: scaleX(0);
+    transition: 0.4s;
+    transform-origin: 0 50%;
+    background: #3894d1;
+    transition-delay: 0.3s;
+}
+.cntc::before {
+    opacity: 0.9;
+    transform: scaleX(0);
+    transition: 0.4s;
+    transform-origin: 100% 50%;
+    background: #8c8d8d;
+}
+.cntc:hover::after {
+    transform: scaleX(1);
+}
+.cntc:hover::before {
+    transform: scaleX(1);
+}
+.cntc:hover {
+    color: white;
+    transition: 0.3s;
+}
 .grad::before, .grad::after {
     content: "";
     height: 100%;
@@ -58,12 +106,11 @@
     border-radius: 5px;
 }
 .grad::after {
-    opacity: 0.9;
-    transform: scaleX(0);
+    opacity: 0;
     transition: 0.5s;
 }
 .grad:hover::after {
-    transform: scaleX(1);
+    opacity: 0.9;
 }
 .ltr::after {
     transform-origin: 0 0;
@@ -72,22 +119,14 @@
     transform-origin: 100% 0%;
 }
 
-.grad1::before {
-    background: white;
+.grad1::before, .grad2::before, .grad3::before {
+    background: #5D5DFF;
 }
 .grad1::after {
     background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
 }
-
-.grad2::before {
-    background: rgb(107, 179, 238);
-}
 .grad2::after {
     background: linear-gradient(to left, #d2da6d, #cf89c4, #fa5235);
-}
-
-.grad3::before {
-    background: rgb(139, 206, 94);
 }
 .grad3::after {
     background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
@@ -98,7 +137,6 @@
     .btn {
         height: auto;
         width: auto;
-        padding: 15px 15px;
         font-size: 16px;
         font-weight: 700;
     }

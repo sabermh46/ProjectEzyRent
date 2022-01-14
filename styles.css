@@ -560,15 +560,22 @@ body {
     align-items: center;
     color: white;
 }
-.section8 h2, .section8 h1 {
-    padding: 40px;
+.section8 h2 {
+    padding-top: 80px;
+    padding-bottom: 10px;
     font-size: 30px;
 }
 .section8 h1 {
-    font-family: 40px;
+    font-size: 45px;
+    padding: 40px;
+    line-height: 121%;
 }
 .video {
+    background: url('pic/pic001.png');
     width: 100%;
+    aspect-ratio: 2.23;
+    background-position: center center;
+    background-size: cover;
 }
 
 .up {
