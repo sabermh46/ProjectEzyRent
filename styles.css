@@ -612,27 +612,6 @@ body {
     background: rgb(146, 241, 213);
 }
 
-
-
-
-.l-item {
-    transform: rotate(28deg);
-}
-.b-red {
-    border: 1px solid red;
-}
-.b-black {
-    border: 1px solid black;
-}
-.b-white{
-    border: 1px solid white;
-}
-.b-yellow {
-    border: 1px solid yellow;
-}
-.b-skyblue {
-    border: 1px solid skyblue;
-}
 #section2 {
     transition: 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
