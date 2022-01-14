@@ -20,8 +20,8 @@ body {
 }
 
 .navigation {
-    width: 90%;
-    margin: auto 5%;
+    width: 84%;
+    margin: auto 8%;
     display: flex;
     justify-content: space-between;
     padding: 80px 20px;
@@ -161,12 +161,12 @@ body {
 .section2 h2 {
     color: white;
     z-index: 40;
-    width: 70%;
+    width: 80%;
     font-size: 35px;
     line-height: 50px;
     margin: 0 auto;
     font-weight: 500;
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 121%;
     letter-spacing: -0.5px;
     opacity: 0.94;
@@ -195,34 +195,35 @@ body {
 .image-box {
     width: 45vw;
     aspect-ratio: 1.64;
-    background: rgb(78, 78, 78);
+    background: #141414;
     border-radius: 0 8px 8px 0;
 }
 
 
 
 
-.section3 .sec1{
-    width: 40%;
-    border: 1px solid white;
-}
-.section3 .sec2 {
-    width: 60%;
-    border: 1px solid white;
+
+.section3 {
+    width: 50%;
 }
 .double-img2 {
     z-index: 30;
     position: relative;
-    margin-right: 25%;
+    left: 50%;
+    transform: translateX(-15%);
     margin-bottom: 30px;
 }
 .section3 h2 {
     color: white;
     z-index: 40;
-    width: 60%;
-    font-size: 35px;
+    width: 55%;
     line-height: 50px;
     margin: 0 auto;
+    font-weight: 500;
+    font-size: 3.5vw;
+    line-height: 121%;
+    letter-spacing: -0.5px;
+    opacity: 0.94;
 }
 .image11 {
     background: url('pic/pic4.png');
@@ -250,7 +251,7 @@ body {
     right: 0;
     width: 50vw;
     aspect-ratio: 1.78;
-    background: rgb(78, 78, 78);
+    background: #141414;
     border-radius: 8px 0 0 8px;
 }
 
