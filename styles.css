@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Archivo', sans-serif;
+    
 }
 
 html {
@@ -32,19 +33,19 @@ body {
 
 .navigation .brand {
     color: white;
-    font-size: 40px;
+    font-size: 32px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 72px;
+    line-height: 60px;
 }
 .navigation .links
 {
     display: flex;
 }
 .navigation .links .link {
-    height: 72px;
-    width: 196px;
+    height: 60px;
+    width: 176px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
@@ -92,7 +93,7 @@ body {
 .links .link1::before {
    content: "";
    width: inherit;
-   height: 70px;
+   height: 58px;
    background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
    position: absolute;
     top: 0;
@@ -108,7 +109,7 @@ body {
 }
 
 .fd12 {
-    height:200px;
+    height:100px;
 }
 .section1 {
     display: flex;
@@ -369,7 +370,7 @@ body {
 }
 .content {
     width: 60%;
-    margin: 40px auto;
+    margin: 10px auto;
 }
 .content h1 {
     font-size: 30px;
@@ -378,7 +379,8 @@ body {
 }
 .content p {
     padding-top: 30px;
-    color: gray;
+    color: white;
+    opacity: 0.72;
     font-size: 12px;
 }
 .sec2sec {
@@ -467,18 +469,29 @@ body {
     background: #141414;
     border-radius: 12px;
     position: relative;
+    display: flex;
 }
 .sec61, .sec62 {
-    width: 45%;
+    width: 50%;
     z-index: 60;
 }
-.section6 .sec61 {
-    width: 55%;
-}
-.section6 .sec62 {
+.sec61 {
     display: flex;
+    padding-left: 80px;
+}
+.sec62 {
+    position: sticky;
+    margin: 0 auto;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+.dummy6 {
+    height: 150vh;
+    width: 20px;
+    border: 1px solid red;
 }
 .ss1 {
     background: url('pic/pic8.png');
@@ -494,7 +507,6 @@ body {
     background-position: 50% 50%;
     border-radius: 20px;
     border: 5px solid white;
-    position:absolute;
 }
 .ss1 {
     left: 8%;
@@ -508,13 +520,39 @@ body {
 
 
 
-.section7 .sec1{
-    width: 40%;
-    border: 1px solid white;
+.section7.sec1{
+    width: 50%;
+    position: sticky;
+    margin: 0 auto;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.section7 .sec2 {
+.section7.sec2 {
+    width: 50%;
+    padding-top: 200px;
+}
+.dummy7 {
+    height: 100vh;
+    border: 2px solid red;
+}
+.content7 {
     width: 60%;
-    border: 1px solid white;
+    margin: 0 auto;
+    color: white;
+}
+.content7 h1 {
+    font-size: 35px;
+    line-height: 121%;
+    color: white;
+}
+.content7 p {
+    padding-top: 30px;
+    color: white;
+    opacity: 0.72;
+    font-size: 12px;
 }
 .double-img7 {
     z-index: 50;
