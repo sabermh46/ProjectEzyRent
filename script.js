@@ -24,12 +24,10 @@
     var up = document.getElementById('up');
 
     var pc = window.matchMedia("(min-width: 801px)");
-    var tb = window.matchMedia("(max-width: 800px)");
+    var tb = window.matchMedia("(max-width: 800px) and (min-width: 501px)");
     var mb = window.matchMedia("(max-width: 500px)");
  
 window.addEventListener('scroll', function() {
-
-    
     var sec2 = section2.getBoundingClientRect().top;
     var sec3 = section3.getBoundingClientRect().top;
     var sec4 = section4.getBoundingClientRect().top;
@@ -288,6 +286,17 @@ window.addEventListener('scroll', function() {
         {
             up.style.visibility = 'hidden';
         }
+    }
+    if(mb.matches){
+        if(scrollNav <= 6.3333)
+        {
+            nav.style.padding = 40 - scrollNav*3 + 'px 10px';
+        }
+        else if(scrollNav > 6.333)
+        {
+            nav.style.padding = '10px 10px';
+        }
+
     }
     
     
