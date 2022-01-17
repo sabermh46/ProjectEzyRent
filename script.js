@@ -33,6 +33,18 @@
         trigger.classList.toggle('open');
     }
 
+    function playPause(btn, vid) {
+        var vid = document.getElementById('video');
+        const icon = document.getElementById('icon');
+        if(vid.paused) {
+            vid.play();
+            icon.innerHTML = 'play_arrow';
+        } else {
+            vid.pause();
+            icon.innerHTML = 'pause';
+        }
+    }
+
 window.addEventListener('scroll', function() {
     var sec2 = section2.getBoundingClientRect().top;
     var sec3 = section3.getBoundingClientRect().top;
