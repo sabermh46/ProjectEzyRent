@@ -27,8 +27,6 @@
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px) and (min-width: 501px)");
     var mb = window.matchMedia("(max-width: 500px)");
-    
-    const btn = document.getElementById('rn');
 
     function triggerModal() {
         const trigger = document.getElementById('modal');

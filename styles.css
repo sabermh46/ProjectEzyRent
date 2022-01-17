@@ -96,14 +96,14 @@ body {
     height: 40px;
     margin-top: 10px;
     cursor: pointer;
-    background: #5D5DFF;
+    background: linear-gradient(to left, #5D5DFF, #5D5DFF, #5D5DFF);
     color: white;
-    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 0.5s;
 }
 .form-btn:hover {
+    background: linear-gradient(to left, #5D5DFF, #C850C0, #bd466e);
     letter-spacing: 5px;
 }
-
 .modal-sub {
     text-align: center;
     font-size: 14px;
