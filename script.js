@@ -1,4 +1,5 @@
 
+    
     var pic1 = document.getElementById('pic1');
     var nav = document.getElementById('navigation');
     var section2 = document.getElementById('section2');
@@ -26,7 +27,14 @@
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px) and (min-width: 501px)");
     var mb = window.matchMedia("(max-width: 500px)");
- 
+    
+    const btn = document.getElementById('rn');
+
+    function triggerModal() {
+        const trigger = document.getElementById('modal');
+        trigger.classList.toggle('open');
+    }
+
 window.addEventListener('scroll', function() {
     var sec2 = section2.getBoundingClientRect().top;
     var sec3 = section3.getBoundingClientRect().top;

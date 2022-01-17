@@ -14,7 +14,40 @@
             </div>
             <div class="links">
                 <a href="#section8" class="link link1"><i class="material-icons blue">play_arrow</i>How To Work</a>
-                <a href="#" class="link link2">Register Now</a>
+                <div onclick="triggerModal()">
+                    <a class="link link2">Register Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mod-container" id="modal">
+            <div class="modal">
+                <div class="modal-title">
+                    Welcome to EzyRent
+                </div>
+                <div class="modal-form">
+                    <form action="get">
+                        <div class="form-input">
+                            <span class="label">Name</span>
+                            <input class="input" type="text" name="name" id="">
+                        </div>
+                        <div class="form-input">
+                            <span class="label">Email</span>
+                            <input class="input" type="email" name="name" id="">
+                        </div>
+                        <div class="form-input">
+                            <span class="label">Phone Number</span>
+                            <input class="input" type="number" name="name" id="">
+                        </div>
+                        <input class="form-btn" type="button" value="Submit">
+                    </form>
+                </div>
+                <div class="modal-sub">
+                    *One of our agent will contact you shortly.
+                </div>
+                <div onclick="triggerModal()" class="modal-close">
+                    <i class="material-icons">close</i>
+                </div>
             </div>
         </div>
 
