@@ -23,6 +23,7 @@
     var part52 = document.getElementById('sec52');
     var scrollArea = window.innerHeight;
     var up = document.getElementById('up');
+    var videoT = document.getElementById('video');
 
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px) and (min-width: 501px)");
@@ -53,11 +54,22 @@ window.addEventListener('scroll', function() {
     var sec6 = section6.getBoundingClientRect().top;
     var sec7 = section7.getBoundingClientRect().top;
     var sec8 = section8.getBoundingClientRect().top;
+    var vidTop = videoT.getBoundingClientRect().top;
     
     var scY = window.scrollY;
     var ev = (1000 - sec2)*0.1;
     var scrollNav = scY * 0.1;
     var top = document.documentElement.scrollTop || document.body.scrollTop;
+
+
+        if(vidTop + 100 < scrollArea)
+        {
+            video.play();
+        }
+        else
+        {
+            video.pause();
+        }
 
     if(pc.matches){
         if(scrollNav <= 23.3333)
@@ -162,7 +174,6 @@ window.addEventListener('scroll', function() {
         if(sec7 - 100 < scrollArea)
         {
             var s7ev = (scrollArea - sec7 + 100)*0.1;
-            console.log("s7: " + s7ev);
             img71.style.transform = 'translateY(-' + s7ev*1.5 + 'px)';
             img72.style.transform = 'translateY(-' + s7ev*4 + 'px)';
         }
@@ -180,6 +191,8 @@ window.addEventListener('scroll', function() {
         {
             up.style.visibility = 'hidden';
         }
+
+
     }
     else if(tb.matches)
     {
