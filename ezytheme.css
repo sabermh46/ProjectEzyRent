@@ -20,11 +20,6 @@
 .tbc90 {
     width: 90%;
 }
-@media (max-width: 501px) {
-    .c-sm-90 {
-        width: 90%;
-    } 
-}
 .flex {
     display: flex;
 }
