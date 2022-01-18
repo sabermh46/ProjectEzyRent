@@ -26,7 +26,7 @@
     var videoT = document.getElementById('video');
 
     var pc = window.matchMedia("(min-width: 801px)");
-    var tb = window.matchMedia("(max-width: 800px) and (min-width: 501px)");
+    var tb = window.matchMedia("(max-width: 800px)");
     var mb = window.matchMedia("(max-width: 500px)");
 
     function triggerModal() {
@@ -183,6 +183,69 @@ window.addEventListener('scroll', function() {
 
 
     }
+    else if(mb.matches){
+        if(scrollNav <= 6.3333)
+        {
+            nav.style.padding = 40 - scrollNav*3 + 'px 10px';
+        }
+        else if(scrollNav > 6.333)
+        {
+            nav.style.padding = '10px 10px';
+        }
+
+        if(sec5 + 200 < scrollArea)
+        {
+            sec51.style.transform = 'translateX(0%)';
+            sec52.style.transform = 'translateX(0%)';
+            sec51.style.opacity = 1;
+            sec52.style.opacity = 1;
+        }
+        else
+        {
+            sec51.style.transform = 'translateX(-100%)';
+            sec52.style.transform = 'translateX(100%)';
+            sec51.style.opacity = 0;
+            sec52.style.opacity = 0;
+        }
+        var sec4ev = (3000 - sec4)*0.1;
+        if(sec4 < 600)
+        {
+            section4.style.transform = 'translateY(0px)';
+            section4.style.opacity = 1;
+            item1.classList.add('ttip-anim');
+        }
+        else
+        {
+            section4.style.transform = 'translateY(100px)';
+            section4.style.opacity = 0;
+            item1.classList.remove('ttip-anim');
+        }
+        if(sec4 < 500)
+        {
+            item2.classList.add('ttip-anim');
+        }
+        else
+        {
+            item2.classList.remove('ttip-anim');
+        }
+        if(sec4 < 400)
+        {
+            item3.classList.add('ttip-anim');
+        }
+        else
+        {
+            item3.classList.remove('ttip-anim');
+        }
+        if(sec4 < 300)
+        {
+            item4.classList.add('ttip-anim');
+        }
+        else
+        {
+            item4.classList.remove('ttip-anim');
+        }
+
+    }
     else if(tb.matches)
     {
 
@@ -298,69 +361,7 @@ window.addEventListener('scroll', function() {
             img72.style.transform = 'translateY()';
         }
     }
-    if(mb.matches){
-        if(scrollNav <= 6.3333)
-        {
-            nav.style.padding = 40 - scrollNav*3 + 'px 10px';
-        }
-        else if(scrollNav > 6.333)
-        {
-            nav.style.padding = '10px 10px';
-        }
-
-        if(sec5 + 200 < scrollArea)
-        {
-            sec51.style.transform = 'translateX(0%)';
-            sec52.style.transform = 'translateX(0%)';
-            sec51.style.opacity = 1;
-            sec52.style.opacity = 1;
-        }
-        else
-        {
-            sec51.style.transform = 'translateX(-100%)';
-            sec52.style.transform = 'translateX(100%)';
-            sec51.style.opacity = 0;
-            sec52.style.opacity = 0;
-        }
-        var sec4ev = (3000 - sec4)*0.1;
-        if(sec4 < 600)
-        {
-            section4.style.transform = 'translateY(0px)';
-            section4.style.opacity = 1;
-            item1.classList.add('ttip-anim');
-        }
-        else
-        {
-            section4.style.transform = 'translateY(100px)';
-            section4.style.opacity = 0;
-            item1.classList.remove('ttip-anim');
-        }
-        if(sec4 < 500)
-        {
-            item2.classList.add('ttip-anim');
-        }
-        else
-        {
-            item2.classList.remove('ttip-anim');
-        }
-        if(sec4 < 400)
-        {
-            item3.classList.add('ttip-anim');
-        }
-        else
-        {
-            item3.classList.remove('ttip-anim');
-        }
-        if(sec4 < 300)
-        {
-            item4.classList.add('ttip-anim');
-        }
-        else
-        {
-            item4.classList.remove('ttip-anim');
-        }
-
-    }
+    
     
     
 
