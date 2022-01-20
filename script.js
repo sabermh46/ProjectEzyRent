@@ -23,11 +23,25 @@
     var part52 = document.getElementById('sec52');
     var scrollArea = window.innerHeight;
     var up = document.getElementById('up');
-    var videoT = document.getElementById('video');
+    var vid = document.getElementById('video');
+    var icon = document.getElementById('icon');
+    var ctrl = document.getElementById('ctrl');
 
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px)");
     var mb = window.matchMedia("(max-width: 500px)");
+
+    function playpause() {
+        if(icon.innerHTML == 'play_arrow')
+        {
+            icon.innerHTML = 'pause'
+            vid.play();
+        }
+        else {
+            icon.innerHTML = 'play_arrow'
+            vid.pause();
+        }
+    }
 
     function triggerModal() {
         const trigger = document.getElementById('modal');
@@ -43,7 +57,6 @@ window.addEventListener('scroll', function() {
     var sec6 = section6.getBoundingClientRect().top;
     var sec7 = section7.getBoundingClientRect().top;
     var sec8 = section8.getBoundingClientRect().top;
-    var vidTop = videoT.getBoundingClientRect().top;
     
     var scY = window.scrollY;
     var ev = (1000 - sec2)*0.1;
@@ -51,14 +64,7 @@ window.addEventListener('scroll', function() {
     var top = document.documentElement.scrollTop || document.body.scrollTop;
 
 
-        if(vidTop + 100 < scrollArea)
-        {
-            video.play();
-        }
-        else
-        {
-            video.pause();
-        }
+        
 
         if(sec8 - 100 < scrollArea)
         {
@@ -72,11 +78,12 @@ window.addEventListener('scroll', function() {
     if(pc.matches){
         if(scrollNav <= 23.3333)
         {
-            nav.style.padding = 80 - scrollNav*3 + 'px 20px';
+            nav.style.padding = 80 - scrollNav*3 + 'px 8%';
         }
         else if(scrollNav > 23.333)
         {
-            nav.style.padding = '10px 20px';
+            nav.style.padding = '10px 8%';
+            nav.style.background = 'black';
         }
         if(sec2 < 800)
         {

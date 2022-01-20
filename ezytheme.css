@@ -48,11 +48,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 .cntc {
     width: 100%;
-    padding: 10px 15px;
+    padding: 12px 55px;
     margin: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
 }
 .cntc::before, .cntc::after {
     content: "";
@@ -64,19 +68,22 @@
     z-index: -1;
 }
 .cntc::after {
-    opacity: 0.9;
+    opacity: 1;
     transform: scaleX(0);
     transition: 0.4s;
     transform-origin: 0 50%;
-    background: #3894d1;
+    background: #4F4FFF;
     transition-delay: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
 }
 .cntc::before {
     opacity: 0.9;
     transform: scaleX(0);
     transition: 0.4s;
     transform-origin: 100% 50%;
-    background: #8c8d8d;
+    background: #63c5c5;
+    border-radius: 5px;
 }
 .cntc:hover::after {
     transform: scaleX(1);
@@ -85,7 +92,6 @@
     transform: scaleX(1);
 }
 .cntc:hover {
-    color: white;
     transition: 0.3s;
 }
 .grad::before, .grad::after {
@@ -115,14 +121,8 @@
 .grad1::before, .grad2::before, .grad3::before {
     background: #5D5DFF;
 }
-.grad1::after {
-    background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
-}
-.grad2::after {
-    background: linear-gradient(to left, #d2da6d, #cf89c4, #fa5235);
-}
-.grad3::after {
-    background: linear-gradient(to left, #4158D0, #C850C0, #bd466e);
+.grad1::after , .grad2::after, .grad3::after {
+    background: #4F4FFF;
 }
 
 
@@ -136,9 +136,6 @@
     .cntc-btn {
         height: 40px;
     }
-}
-.blue {
-    color: #4158D0;
 }
 .ttip-anim {
     animation: tooltip 1s ease 0s 1;
