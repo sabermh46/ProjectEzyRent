@@ -705,8 +705,8 @@ div.dummy {
     opacity: 0;
 }
 .modal { 
-    width: 40%;
-    min-width: 400px;
+    width: 32%;
+    min-width: 380px;
     height: auto;
     background: rgb(255, 255, 255);
     padding: 25px;
@@ -761,12 +761,12 @@ div.dummy {
     height: 40px;
     margin-top: 10px;
     cursor: pointer;
-    background: linear-gradient(to left, #5D5DFF, #5D5DFF, #5D5DFF);
+    background: #5D5DFF;
     color: white;
     transition: 0.5s;
 }
 .form-btn:hover {
-    background: linear-gradient(to left, #5D5DFF, #C850C0, #bd466e);
+    background: #4F4FFF;
     letter-spacing: 5px;
 }
 .modal-sub {
