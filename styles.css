@@ -753,6 +753,7 @@ div.dummy {
     background: rgba(0, 0, 0, 0.06);
     border: none;
     margin: 10px 0;
+    padding: 8px;
 }
 .form-btn {
     width: 100%;
