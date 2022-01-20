@@ -78,11 +78,11 @@ window.addEventListener('scroll', function() {
     if(pc.matches){
         if(scrollNav <= 23.3333)
         {
-            nav.style.padding = 80 - scrollNav*3 + 'px 8%';
+            nav.style.padding = 80 - scrollNav*3 + 'px 10%';
         }
         else if(scrollNav > 23.333)
         {
-            nav.style.padding = '10px 8%';
+            nav.style.padding = '10px 10%';
             nav.style.background = 'black';
         }
         if(sec2 < 800)

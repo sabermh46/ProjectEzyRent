@@ -22,7 +22,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 80px 8%;
+    padding: 80px 10%;
     position: fixed;
     z-index: 999;
     transition: 0.1s;
@@ -389,17 +389,6 @@ div.dummy {
     width: 60%;
     margin: 10px auto;
 }
-.content h1 {
-    font-size: 30px;
-    line-height: 40px;
-    color: white;
-}
-.content p {
-    padding-top: 30px;
-    color: white;
-    opacity: 0.72;
-    font-size: 12px;
-}
 .sec2sec {
     position: relative;
     width: 90%;
@@ -445,21 +434,21 @@ div.dummy {
     margin: 0px auto;
     color: white;
 }
-.content2 h1 {
-    font-size: 40px;
-    line-height: 40px;
-}
-.content2 p {
-    padding-top: 30px;
+.content2 h1 , .content h1, .content7 h1{
+    font-size: 2.8vw;
+    line-height: 121%;
     color: white;
+}
+.content2 p, .content p, .content7 p {
+    padding-top: 20px;
+    color: white;
+    line-height: 170%;
     opacity: 0.72;
     font-size: 12px;
 }
 .content2 button {
     z-index: 90;
 }
-
-
 .section6 {
     aspect-ratio: 2.02;
     background: #141414;
@@ -538,17 +527,6 @@ div.dummy {
     margin: 0 auto;
     color: white;
 }
-.content7 h1 {
-    font-size: 35px;
-    line-height: 121%;
-    color: white;
-}
-.content7 p {
-    padding-top: 30px;
-    color: white;
-    opacity: 0.72;
-    font-size: 12px;
-}
 .double-img7 {
     z-index: 50;
     position: relative;
@@ -595,7 +573,7 @@ div.dummy {
 .section8 h2 {
     padding-top: 100px;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 3vw;
 }
 .section8 h1 {
     font-size: 45px;
@@ -608,6 +586,10 @@ div.dummy {
     background-position: center center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
+}
+.frame {
+    width: 100%;
 }
 .main-video {
     width: 100%;
@@ -1128,19 +1110,15 @@ div.dummy {
         left: 20vw;
         top: 0;
     }
-    
-    
-    
     .section4 {
         width: 100%;
         aspect-ratio: 1.93;
         border-radius: 8px;
     }
-    
-    
     #section5 {
         width: 100%;
         flex-flow: column;
+        overflow: hidden;
     }
     .section5 {
         width: 100%;
@@ -1173,9 +1151,6 @@ div.dummy {
         width: 90%;
         margin: 40px auto;
     }
-    
-
-
     .content2 {
         width: 80%;
         margin: 0px auto;
@@ -1192,8 +1167,6 @@ div.dummy {
     .content2 button {
         z-index: 90;
     }
-    
-    
     .section6 {
         aspect-ratio: 2.02;
         background: #141414;
@@ -1236,17 +1209,12 @@ div.dummy {
         left: 30%;
         top: 3%;
     }
-    
-    
-
     .kotu {
         height: 0;
     }
-    
     #section7 {
         flex-wrap: wrap;
     }
-    
     .section7.sec1{
         width: 100%;
         position: relative;
@@ -1304,8 +1272,6 @@ div.dummy {
         margin-right: 0;
         transform: translateY(0);
     }
-    
-
     .section8 h2 {
         font-size: 4vw;
     }
@@ -1320,7 +1286,6 @@ div.dummy {
     .fd34 {
         height: 0;
     }
-    
     .fd45 {
         height:150px;
     }

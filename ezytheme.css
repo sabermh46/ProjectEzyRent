@@ -31,14 +31,20 @@
     border: none;
     height: 50px;
     width: auto;
-    padding: 0 15px;
-    font-size: 20px;
+    padding: 5px 23px;
+    font-size: 16px;
     transition: 0.5s;
     background: transparent;
     cursor: pointer;
     color: white;
-    margin: 5px;
+    margin: 6px;
+    margin-left: 0;
     z-index: 40;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+.btn:hover {
+    text-shadow: 1px 2px 2px black;
 }
 .cntc-btn {
     background: #5D5DFF;
@@ -105,14 +111,15 @@
     border-radius: 5px;
 }
 .grad::after {
-    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0 0;
     transition: 0.5s;
 }
 .grad:hover::after {
-    opacity: 0.9;
+    transform: scaleX(1);
 }
 .ltr::after {
-    transform-origin: 0 0;
+    transform-origin: 0 50%;
 }
 .rtl::after {
     transform-origin: 100% 0%;
