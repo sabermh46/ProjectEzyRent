@@ -198,6 +198,7 @@ window.addEventListener('scroll', function() {
         else if(scrollNav > 6.333)
         {
             nav.style.padding = '10px 10px';
+            nav.style.background = 'black';
         }
 
         if(sec5 + 200 < scrollArea)
