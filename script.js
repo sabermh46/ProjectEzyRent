@@ -263,11 +263,12 @@ window.addEventListener('scroll', function() {
 
         if(scrollNav <= 13.3333)
         {
-            nav.style.padding = 60 - scrollNav*3 + 'px 20px';
+            nav.style.padding = 60 - scrollNav*3 + 'px 40px';
         }
         else if(scrollNav > 13.333)
         {
-            nav.style.padding = '10px 20px';
+            nav.style.padding = '10px 40px';
+            nav.style.background = 'black';
         }
         if(sec2 < scrollArea)
         {

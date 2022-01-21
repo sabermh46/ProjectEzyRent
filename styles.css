@@ -972,9 +972,8 @@ div.dummy {
 @media (max-width: 800px) and (min-width: 501px) {
     
     .navigation {
-        width: 92%;
-        margin: auto 4%;
-        padding: 60px 20px;
+        margin: 0;
+        padding: 60px 40px;
     }
     .navigation .brand {
         font-size: 26px;
@@ -1103,6 +1102,7 @@ div.dummy {
     }
     .ss {
         width: 20vw;
+        height: 38vw;
         border: 3px solid white;
         border-radius: 10px;
     }
