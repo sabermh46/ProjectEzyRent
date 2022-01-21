@@ -1204,7 +1204,7 @@ div.dummy {
         line-height: 182%;
         color: #FFFFFF;
         opacity: 0.72;
-        padding-top: 10px;
+        padding-top: 0;
         margin: 20px 0;
         text-align: justify;
     }
