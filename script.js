@@ -42,6 +42,10 @@
             vid.pause();
         }
     }
+    document.getElementById('video').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        icon.innerHTML = 'play_arrow'
+    }
 
     function triggerModal() {
         const trigger = document.getElementById('modal');
