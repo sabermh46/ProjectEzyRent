@@ -8,6 +8,27 @@
     font-family: 'Archivo', sans-serif;
 }
 
+
+.container1 {
+    width: 100%;
+}
+.container90 {
+    width: 90%;
+}
+.container80 {
+    width: 80%;
+}
+.container70 {
+    width: 70%;
+}
+.container60 {
+    width: 60%;
+}
+.tbc90, .container90, .container80, .container70, .container60 {
+    margin:  0 auto;
+    position: relative;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -158,12 +179,9 @@ body {
 .links .link1:hover > .blue {
     color: white;
 }
-
-
 .fd12 {
     height:100px;
 }
-
 .section1 {
     width: 80%;
     margin: 0 auto;
@@ -1139,9 +1157,9 @@ div.dummy {
         overflow-x: hidden;
     }
     .navigation {
-        width: 96%;
-        margin: auto 2%;
-        padding: 40px 10px;
+        width: 100%;
+        margin: 0;
+        padding: 40px 15px;
     }
     .navigation .brand {
         font-size: 22px;
@@ -1163,32 +1181,39 @@ div.dummy {
         height:150px;
     }
     .section1 {
-        display: block;
-        width: 80%;
-    }
-    .section1 .part1 {
-        width: 80%;
-        padding-right: 0;
-        position: relative;
-    }
-    .pic1 {
-        margin-top: 20px;
-    }
-    .part1 h1 {
-        font-size: 4vw;
-    }
-    .part1 p {
-        padding-top: 20px;
-    }
-    .section1 .part2 {
         width: 80%;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
-    .section1 .part2 img {
-        border-radius: 3px;
+    .first {
+        width: 100%;
     }
-    .dummy {
-        height: 0;
+    .first1 {
+        position: relative;
+        height: auto;
+    }
+    .first h1 {
+        width: 70%;
+        font-weight: 500;
+        font-size: 5vw;
+        letter-spacing: 0px;
+    }
+    .first p {
+        width: 70%;
+        font-size: 1.3vw;
+        line-height: 182%;
+        color: #FFFFFF;
+        opacity: 0.72;
+        padding-top: 10px;
+        margin: 20px 0;
+        text-align: justify;
+    }
+    .first2 {
+        width: 100%;
+        padding-top: 0;
+    }
+    div.dummy {
+        height: 0vh;
     }
     
     
@@ -1439,6 +1464,7 @@ div.dummy {
     }
     .ss {
         width: 22vw;
+        height: 36vw;
         border-radius: 6px;
         border: 2px solid white;
     }

@@ -1,22 +1,3 @@
-.container1 {
-    width: 100%;
-}
-.container90 {
-    width: 90%;
-}
-.container80 {
-    width: 80%;
-}
-.container70 {
-    width: 70%;
-}
-.container60 {
-    width: 60%;
-}
-.tbc90, .container90, .container80, .container70, .container60 {
-    margin:  0 auto;
-    position: relative;
-}
 .tbc90 {
     width: 90%;
 }
