@@ -113,7 +113,7 @@ window.addEventListener('scroll', function() {
             section3.style.opacity = 1;
         }
         var sec4ev = (3000 - sec4)*0.1;
-        if(sec4 < 600)
+        if(sec4 < scrollArea)
         {
             section4.style.transform = 'translateY(0px)';
             section4.style.opacity = 1;
@@ -166,7 +166,7 @@ window.addEventListener('scroll', function() {
         }
 
 
-        if(sec6 - 100 < scrollArea)
+        if(sec6 + 100 < scrollArea)
         {
             var s6ev = (scrollArea - sec6 + 100)*0.1;
             var s6e1 = s6ev*2 - 100;
@@ -350,8 +350,8 @@ window.addEventListener('scroll', function() {
         if(sec6 - 100 < scrollArea)
         {
             var s6ev = (scrollArea - sec6 + 100)*0.1;
-            var s6e1 = s6ev*2 - 100;
-            var s6e2 = s6ev*4 - 100;
+            var s6e1 = s6ev - 100;
+            var s6e2 = s6ev*1.3 - 100;
             ss1.style.transform = 'translateY(-' + s6e1 + 'px)';
             ss2.style.transform = 'translateY(-' + s6e2 + 'px)';
         }
