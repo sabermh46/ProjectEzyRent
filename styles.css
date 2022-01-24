@@ -1322,33 +1322,10 @@ body {
         width: 90% !important;
     }
     .section4 {
-        width: 100%;
-        background: url('pic/pic6.png');
-        background-position: center center;
-        background-size: cover;
         border-radius: 8px;
-        position: relative;
-        -webkit-transition: 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
-        -o-transition: 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
-        transition: 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
-        -webkit-transform: translateY(100px);
-            -ms-transform: translateY(100px);
-                transform: translateY(100px);
     }
     .tooltip {
-        position: absolute;
-        text-align: center;
         font-size: 2vw;
-        color: white;
-        width: 30%;
-        left: 200px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-    }
-    .tooltip div {
-        width: 75%;
-        font-size: 1.5vw;
-        padding-bottom: 20px;
     }
 
 
