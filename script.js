@@ -3,6 +3,8 @@
     var pic1 = document.getElementById('pic1');
     var nav = document.getElementById('navigation');
     var section2 = document.getElementById('section2');
+    var sec2sec2 = document.querySelector('.section2.sec2');
+    var imgBox1 = document.querySelector('.image-box');
     var section3 = document.getElementById('section3');
     var section4 = document.getElementById('section4');
     var section5 = document.getElementById('section5');
@@ -13,6 +15,7 @@
     var item2 = document.getElementById('item2');
     var item3 = document.getElementById('item3');
     var item4 = document.getElementById('item4');
+    var img1 = document.getElementById('image1');
     var img2 = document.getElementById('image2');
     var img3 = document.getElementById('image11');
     var ss1 = document.getElementById('ss1');
@@ -51,6 +54,7 @@
         const trigger = document.getElementById('modal');
         trigger.classList.toggle('open');
     }
+    console.log(imgBox1);
 
 
 window.addEventListener('scroll', function() {
@@ -203,6 +207,20 @@ window.addEventListener('scroll', function() {
         {
             nav.style.padding = '10px 15px';
             nav.style.background = 'black';
+        }
+        if(sec2 < scrollArea/2)
+        {
+            img1.classList.add('image1Add');
+            img2.classList.add('image1Add');
+            sec2sec2.classList.add('sec2-anim');
+            imgBox1.classList.add('ib-anim');
+        }
+        else
+        {
+            img1.classList.remove('image1Add');
+            img2.classList.remove('image1Add');
+            sec2sec2.classList.remove('sec2-anim');
+            imgBox1.classList.remove('ib-anim');
         }
 
         if(sec5 + 200 < scrollArea)
