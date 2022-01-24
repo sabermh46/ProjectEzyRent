@@ -330,7 +330,6 @@ window.addEventListener('scroll', function() {
         {
             item4.classList.remove('ttip-anim');
         }
-
         if(sec5 + 200 < scrollArea)
         {
             sec51.style.transform = 'translateX(0%)';
