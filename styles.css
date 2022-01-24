@@ -431,9 +431,9 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    -webkit-transform-origin: 40% 100%;
-        -ms-transform-origin: 40% 100%;
-            transform-origin: 40% 100%;
+    -webkit-transform-origin: 25% 100%;
+        -ms-transform-origin: 25% 100%;
+            transform-origin: 25% 100%;
 }
 .tooltip div {
     width: 75%;
@@ -441,27 +441,27 @@ body {
     padding-bottom: 20px;
 }
 .item1 {
-    top: -10%;
-    left: 38%;
+    top: -10% !important;
+    left: 38% !important;
 }
 .item2 {
     background: url('pic/ttipL.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    -webkit-transform-origin: 60% 100%;
-        -ms-transform-origin: 60% 100%;
-            transform-origin: 60% 100%;
-    top: 40%;
-    left: -5%;
+    -webkit-transform-origin: 75% 100%;
+        -ms-transform-origin: 75% 100%;
+            transform-origin: 75% 100%;
+    top: 40% !important;
+    left: -5% !important;
 }
 .item3 {
-    top: 34%;
-    left: 70%;
+    top: 34% !important;
+    left: 73% !important;
 }
 .item4 {
-    top: 70%;
-    left: 38%;
+    top: 70% !important;
+    left: 38% !important;
 }
 
 
@@ -1318,18 +1318,15 @@ body {
         border-radius: 8px 0 0 8px;
     }
 
-    .section4 {
-        width: 100%;
-        aspect-ratio: 1.93;
-        border-radius: 8px;
+    #s4 {
+        width: 90% !important;
     }
     .section4 {
         width: 100%;
-        aspect-ratio: 1.93;
         background: url('pic/pic6.png');
         background-position: center center;
         background-size: cover;
-        border-radius: 24px;
+        border-radius: 8px;
         position: relative;
         -webkit-transition: 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
         -o-transition: 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -1341,28 +1338,12 @@ body {
     .tooltip {
         position: absolute;
         text-align: center;
-        font-size: inherit;
+        font-size: 2vw;
         color: white;
         width: 30%;
         left: 200px;
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        aspect-ratio: 2.6;
-        background: url('pic/ttipR.png');
-        background-color: transparent;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 50% 100%;
-        -webkit-transform-origin: 40% 100%;
-            -ms-transform-origin: 40% 100%;
-                transform-origin: 40% 100%;
     }
     .tooltip div {
         width: 75%;
