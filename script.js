@@ -29,6 +29,7 @@
     var vid = document.getElementById('video');
     var icon = document.getElementById('icon');
     var ctrl = document.getElementById('ctrl');
+    var sec2h2 = document.querySelector('.section2 h2');
 
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px)");
@@ -65,6 +66,7 @@ window.addEventListener('scroll', function() {
     var sec6 = section6.getBoundingClientRect().top;
     var sec7 = section7.getBoundingClientRect().top;
     var sec8 = section8.getBoundingClientRect().top;
+    var subSec2h2 = sec2h2.getBoundingClientRect().top;
     
     var scY = window.scrollY;
     var ev = (1000 - sec2)*0.1;
@@ -81,6 +83,13 @@ window.addEventListener('scroll', function() {
         else
         {
             up.style.visibility = 'hidden';
+        }
+        if(subSec2h2 < scrollArea * 0.7)
+        {
+            sec2h2.classList.add('sec2h2');
+        }
+        else {
+            sec2h2.classList.remove('sec2h2');
         }
         
     if(pc.matches){
@@ -212,14 +221,12 @@ window.addEventListener('scroll', function() {
         {
             img1.classList.add('image1Add');
             img2.classList.add('image1Add');
-            sec2sec2.classList.add('sec2-anim');
             imgBox1.classList.add('ib-anim');
         }
         else
         {
             img1.classList.remove('image1Add');
             img2.classList.remove('image1Add');
-            sec2sec2.classList.remove('sec2-anim');
             imgBox1.classList.remove('ib-anim');
         }
 
