@@ -30,6 +30,11 @@
     var icon = document.getElementById('icon');
     var ctrl = document.getElementById('ctrl');
     var sec2h2 = document.querySelector('.section2 h2');
+    var sec3h2 = document.querySelector('.section3 h2');
+    var con2h1 = document.querySelector('.content2 h1');
+    var con7h1 = document.querySelector('.content7 h1');
+    var con2p = document.querySelector('.content2 p');
+    var con7p = document.querySelector('.content7 p');
 
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(max-width: 800px)");
@@ -67,7 +72,10 @@ window.addEventListener('scroll', function() {
     var sec7 = section7.getBoundingClientRect().top;
     var sec8 = section8.getBoundingClientRect().top;
     var subSec2h2 = sec2h2.getBoundingClientRect().top;
-    
+    var subSec3h2 = sec3h2.getBoundingClientRect().top;
+    var subcon2h1 = con2h1.getBoundingClientRect().top;
+    var subcon7h1 = con7h1.getBoundingClientRect().top;
+
     var scY = window.scrollY;
     var ev = (1000 - sec2)*0.1;
     var scrollNav = scY * 0.1;
@@ -84,13 +92,39 @@ window.addEventListener('scroll', function() {
         {
             up.style.visibility = 'hidden';
         }
-        if(subSec2h2 < scrollArea * 0.7)
+        if(subSec2h2 < scrollArea * 0.8)
         {
             sec2h2.classList.add('sec2h2');
         }
         else {
             sec2h2.classList.remove('sec2h2');
         }
+        if(subSec3h2 < scrollArea * 0.8)
+        {
+            sec3h2.classList.add('sec2h2');
+        }
+        else {
+            sec3h2.classList.remove('sec2h2');
+        }
+        if(subcon2h1 < scrollArea * 0.8)
+        {
+            con2h1.classList.add('conh1');
+            con2p.classList.add('conP');
+        }
+        else {
+            con2h1.classList.remove('conh1');
+            con2p.classList.remove('conP');
+        }
+        if(subcon7h1 < scrollArea * 0.8)
+        {
+            con7h1.classList.add('conh1');
+            con7p.classList.add('conP');
+        }
+        else {
+            con7h1.classList.remove('conh1');
+            con7p.classList.remove('conP');
+        }
+        
         
     if(pc.matches){
         if(scrollNav <= 23.3333)

@@ -211,7 +211,19 @@ body {
     font-size: 4vw;
     line-height: 107%;
     letter-spacing: -1px;
+    transform: translateY(0px);
+    opacity: 1;
     color: #FFFFFF;
+    animation: Fh1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+}
+@keyframes Fh1 {
+    from {
+        line-height: 207%;
+        letter-spacing: -1px;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    
 }
 .first p {
     font-size: 1.3vw;
@@ -220,12 +232,23 @@ body {
     opacity: 0.72;
     padding-top: 40px;
     padding-right: 20px;
+    transform: translateY(0px);
+    animation: Fp 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
 }
+@keyframes Fp {
+    from {
+        line-height: 10%;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
 .first2 {
     width: 60%;
     height: 800px;
     padding-top: 100px;
 }
+
 .pic1 {
     width: 100%;
     aspect-ratio: 1.5;
@@ -277,12 +300,9 @@ body {
     letter-spacing: -0.5px;
     opacity: 0;
     transform: translateY(90px);
-    transition: 1s ease;
-}
-.sec2h2 {
-    opacity: 0.94 !important;
-    line-height: 121% !important;
-    transform: translateY(0px) !important;
+    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .image1 {
     background: url('pic/pic2.png');
@@ -354,13 +374,21 @@ body {
     color: white;
     z-index: 40;
     width: 55%;
-    line-height: 50px;
     margin: 0 auto;
     font-weight: 500;
     font-size: 3.5vw;
-    line-height: 121%;
+    line-height: 0%;
     letter-spacing: -0.5px;
-    opacity: 0.94;
+    opacity: 0;
+    transform: translateY(90px);
+    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.sec2h2 {
+    opacity: 0.94 !important;
+    line-height: 121% !important;
+    transform: translateY(0px) !important;
 }
 .image11 {
     background: url('pic/pic4.png');
@@ -539,12 +567,41 @@ body {
     line-height: 121%;
     color: white;
 }
-.content2 p, .content p, .content7 p {
+.content2 h1, .content7 h1 {
+    line-height: 181%;
+    opacity: 0;
+    transform: translateY(90px);
+    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.conh1 {
+    opacity: 1 !important;
+    line-height: 121% !important;
+    transform: translateY(0px) !important;
+}
+.content p {
     padding-top: 20px;
     color: white;
     line-height: 170%;
     opacity: 0.72;
     font-size: 12px;
+}
+.content2 p, .content7 p {
+    padding-top: 20px;
+    color: white;
+    line-height: 10%;
+    opacity: 0;
+    font-size: 12px;
+    transform: translateY(60px);
+    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.conP {
+    line-height: 170% !important;
+    opacity: 0.72 !important;
+    transform: translateY(0px) !important;
 }
 .content2 button {
     z-index: 90;
@@ -1266,9 +1323,9 @@ body {
         -webkit-transform: translateY(100px);
             -ms-transform: translateY(100px);
                 transform: translateY(100px);
-                -webkit-transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                -o-transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -webkit-transition: 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                 opacity: 0;
     }
     
@@ -1280,9 +1337,9 @@ body {
         -webkit-transform: translateY(100px);
             -ms-transform: translateY(100px);
                 transform: translateY(100px);
-                -webkit-transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                -o-transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                transition: 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -webkit-transition: 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         opacity: 0;
     }
     .image1Add {
