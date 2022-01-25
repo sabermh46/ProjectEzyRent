@@ -54,7 +54,7 @@
         const trigger = document.getElementById('modal');
         trigger.classList.toggle('open');
     }
-    console.log(imgBox1);
+
 
 
 window.addEventListener('scroll', function() {
