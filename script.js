@@ -18,6 +18,7 @@
     var img1 = document.getElementById('image1');
     var img2 = document.getElementById('image2');
     var img3 = document.getElementById('image11');
+    var img4 = document.getElementById('image12');
     var ss1 = document.getElementById('ss1');
     var ss2 = document.getElementById('ss2');
     var img71 = document.getElementById('image71');
@@ -251,7 +252,7 @@ window.addEventListener('scroll', function() {
             nav.style.padding = '10px 15px';
             nav.style.background = 'black';
         }
-        if(sec2 < scrollArea/2)
+        if(sec2 < scrollArea * 0.8)
         {
             img1.classList.add('image1Add');
             img2.classList.add('image1Add');
@@ -263,6 +264,37 @@ window.addEventListener('scroll', function() {
             img2.classList.remove('image1Add');
             imgBox1.classList.remove('ib-anim');
         }
+        if(sec3 < scrollArea * 0.8)
+        {
+            img3.classList.add('image1Add');
+            img4.classList.add('image1Add');
+        }
+        else
+        {
+            img3.classList.remove('image1Add');
+            img4.classList.remove('image1Add');
+        }
+        if(sec6 < scrollArea * 0.8)
+        {
+            ss1.classList.add('image1Add');
+            ss2.classList.add('image1Add');
+        }
+        else
+        {
+            ss1.classList.remove('image1Add');
+            ss2.classList.remove('image1Add');
+        }
+        if(sec7 < scrollArea * 0.8)
+        {
+            img71.classList.add('image1Add');
+            img72.classList.add('image1Add');
+        }
+        else
+        {
+            img71.classList.remove('image1Add');
+            img72.classList.remove('image1Add');
+        }
+        
 
         if(sec5 + 200 < scrollArea)
         {
