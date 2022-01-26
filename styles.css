@@ -1615,6 +1615,9 @@ body {
         .content7 h1 {
             font-size: 4vw;
         }
+        .content7 p {
+            font-size: 2.2vw;
+        }
         .double-img7 {
             z-index: 50;
             position: relative;
