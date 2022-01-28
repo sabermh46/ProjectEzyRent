@@ -670,11 +670,9 @@ body {
 }
 .ss1 {
     left: 8%;
-    top: -11%;
 }
 .ss2 {
     left: 30%;
-    top: 3%;
 }
 
 
@@ -727,9 +725,6 @@ body {
     background: url('pic/pic10.png');
     width: 18vw;
     height: 25.7vw;
-    -webkit-transform: translateY(100px);
-        -ms-transform: translateY(100px);
-            transform: translateY(100px);
     background-position: left center;
     margin-top: 50%;
 }
@@ -738,9 +733,6 @@ body {
     width: 18vw;
     aspect-ratio: 0.445;
     margin-right: 20px;
-    -webkit-transform: translateY(-50px);
-        -ms-transform: translateY(-50px);
-            transform: translateY(-50px);
     background-position: center center;
 }
 .image71, .image72 {

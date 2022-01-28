@@ -160,7 +160,7 @@ window.addEventListener('scroll', function() {
         {
             section3.style.opacity = 1;
         }
-        var sec4ev = (3000 - sec4)*0.1;
+
         if(sec4 < scrollArea)
         {
             section4.style.transform = 'translateY(0px)';
@@ -213,31 +213,26 @@ window.addEventListener('scroll', function() {
             sec52.style.opacity = 0;
         }
 
-
-        if(sec6 + 100 < scrollArea)
+        var uTurn = -1;
+        if(sec6 < scrollArea)
         {
-            var s6ev = (scrollArea - sec6 + 100)*0.1;
-            var s6e1 = s6ev*2 - 100;
-            var s6e2 = s6ev*4 - 100;
-            ss1.style.transform = 'translateY(-' + s6e1 + 'px)';
-            ss2.style.transform = 'translateY(-' + s6e2 + 'px)';
-        }
-        else
+            var s6e1 = ((sec6-scrollArea)*uTurn)*0.1;
+            console.log(s6e1);
+            var s6e2 = s6e1*1.8;
+            if(s6e1 < 61){
+                ss1.style.transform = 'translateY(-' + s6e1 + 'px)';
+                ss2.style.transform = 'translateY(-' + s6e2 + 'px)';
+            }
+        }    
+        if(sec7 < scrollArea-50)
         {
-            ss1.style.transform = 'translateY()';
-            ss2.style.transform = 'translateY()';
-        }
-        
-        if(sec7 - 100 < scrollArea)
-        {
-            var s7ev = (scrollArea - sec7 + 100)*0.1;
-            img71.style.transform = 'translateY(-' + s7ev*1.5 + 'px)';
-            img72.style.transform = 'translateY(-' + s7ev*4 + 'px)';
-        }
-        else
-        {
-            img71.style.transform = 'translateY()';
-            img72.style.transform = 'translateY()';
+            var s7e1 = ((sec7-scrollArea)*uTurn)*0.1;
+            console.log(s7e1);
+            var s7e2 = s7e1*4.2;
+            if(s7e1 < 65){
+                img71.style.transform = 'translateY(-' + s7e1 + 'px)';
+                img72.style.transform = 'translateY(-' + s7e2 + 'px)';
+            }
         }
 
 
@@ -310,7 +305,6 @@ window.addEventListener('scroll', function() {
             sec51.style.opacity = 0;
             sec52.style.opacity = 0;
         }
-        var sec4ev = (3000 - sec4)*0.1;
         if(sec4 < 600)
         {
             section4.style.transform = 'translateY(0px)';
@@ -436,20 +430,6 @@ window.addEventListener('scroll', function() {
             sec52.style.opacity = 0;
         }
 
-
-        if(sec6 - 100 < scrollArea)
-        {
-            var s6ev = (scrollArea - sec6 + 100)*0.1;
-            var s6e1 = s6ev - 100;
-            var s6e2 = s6ev*1.3 - 100;
-            ss1.style.transform = 'translateY(-' + s6e1 + 'px)';
-            ss2.style.transform = 'translateY(-' + s6e2 + 'px)';
-        }
-        else
-        {
-            ss1.style.transform = 'translateY()';
-            ss2.style.transform = 'translateY()';
-        }
         
         if(sec7 - 100 < scrollArea)
         {
