@@ -58,11 +58,40 @@
         icon.innerHTML = 'play_arrow'
     }
 
-    function triggerModal() {
-        const trigger = document.getElementById('modal');
-        trigger.classList.toggle('open');
-    }
+    const modal = document.getElementById('modal');
 
+    var isModalOpen = 0;
+    function openModal() {
+        modal.classList.add('open');
+        isModalOpen=1;
+    }
+    function closeModal() {
+        modal.classList.remove('open');
+        isModalOpen=0;
+    }
+    setInterval(() => {
+        if(isModalOpen == 0){
+            modal.classList.add('open');
+        }
+    }, 30000);
+
+    function ValidateEmail()
+    {
+        var inputText = document.rForm.email;
+        var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+        { 
+            document.rForm.email.focus();
+            document.querySelector(".label2").style.color = 'gray';
+            return true;
+        }
+        else
+        {
+            document.rForm.email.focus();
+            document.querySelector(".label2").style.color = 'red';
+            return false;
+        }
+    }
 
 
 window.addEventListener('scroll', function() {
