@@ -4,6 +4,7 @@
     var nav = document.getElementById('navigation');
     var section2 = document.getElementById('section2');
     var sec2sec2 = document.querySelector('.section2.sec2');
+    var brand = document.querySelector('.brand');
     var imgBox1 = document.querySelector('.image-box');
     var section3 = document.getElementById('section3');
     var section4 = document.getElementById('section4');
@@ -80,8 +81,6 @@ window.addEventListener('scroll', function() {
     var scY = window.scrollY;
     var ev = (1000 - sec2)*0.1;
     var scrollNav = scY * 0.1;
-    var top = document.documentElement.scrollTop || document.body.scrollTop;
-
 
         
 
@@ -128,14 +127,15 @@ window.addEventListener('scroll', function() {
         
         
     if(pc.matches){
-        if(scrollNav <= 23.3333)
+        if(scrollNav <= 17.66)
         {
-            nav.style.padding = 80 - scrollNav*3 + 'px 10%';
+            nav.style.padding = 60 - scrollNav*3 + 'px 10%';
+            brand.style.fontSize = 37 - scrollNav*0.369 +'px';
         }
-        else if(scrollNav > 23.333)
+        else if(scrollNav > 17.66)
         {
-            nav.style.padding = '10px 10%';
-            nav.style.background = 'black';
+            nav.style.padding = '7px 10%';
+            brand.style.fontSize = '30px';
         }
         if(sec2 < 800)
         {
