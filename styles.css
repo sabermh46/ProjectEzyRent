@@ -749,10 +749,38 @@ body {
             align-items: center;
     color: white;
 }
+#section8 {
+    overflow-x: hidden;
+}
+.sec8h11, .sec8h12 {
+    position: relative;
+    display: block;
+    transform: translateX(-100vw);
+    opacity: 0;
+    -webkit-transition: 1s cubic-bezier(.75,.28,.42,.42);
+                -o-transition: 1s cubic-bezier(.75,.28,.42,.42);
+                transition: 1s cubic-bezier(.75,.28,.42,.42);
+}
+.sec8h12 {
+    transform: translateX(100vw);
+}
+.middle {
+    opacity: 1;
+    transform: translateX(0px);
+}
 .section8 h2 {
     padding-top: 100px;
     padding-bottom: 30px;
     font-size: 3vw;
+    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateY(90px);
+    opacity: 0;
+}
+.hitS {
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
 }
 .section8 h1 {
     font-size: 45px;
@@ -765,8 +793,14 @@ body {
     background-position: center center;
     background-size: cover;
     position: relative;
-    overflow: hidden;
-    border: 2px solid #5D5DFF;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.vdo {
+    transform: scaleX(1);
 }
 .frame {
     width: 100%;
@@ -1176,6 +1210,9 @@ body {
     }
 
 
+    #section8 {
+        overflow-x: hidden;
+    }
     .section8 h2 {
         padding-top: 70px;
         padding-bottom: 30px;

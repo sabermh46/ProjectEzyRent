@@ -29,6 +29,7 @@
     var scrollArea = window.innerHeight;
     var up = document.getElementById('up');
     var vid = document.getElementById('video');
+    var vidc = document.querySelector('.video');
     var icon = document.getElementById('icon');
     var ctrl = document.getElementById('ctrl');
     var sec2h2 = document.querySelector('.section2 h2');
@@ -37,6 +38,10 @@
     var con7h1 = document.querySelector('.content7 h1');
     var con2p = document.querySelector('.content2 p');
     var con7p = document.querySelector('.content7 p');
+    var hITw = document.querySelector('.hITw');
+
+    var bottomText1 = document.querySelector('.sec8h11');
+    var bottomText2 = document.querySelector('.sec8h12');
 
     var pc = window.matchMedia("(min-width: 801px)");
     var tb = window.matchMedia("(min-width: 501px)");
@@ -106,12 +111,36 @@ window.addEventListener('scroll', function() {
     var subSec3h2 = sec3h2.getBoundingClientRect().top;
     var subcon2h1 = con2h1.getBoundingClientRect().top;
     var subcon7h1 = con7h1.getBoundingClientRect().top;
+    var btmText = bottomText1.getBoundingClientRect().top;
+    var vdo = vid.getBoundingClientRect().top;
+    var hit = hITw.getBoundingClientRect().top;
 
     var scY = window.scrollY;
     var ev = (1000 - sec2)*0.1;
     var scrollNav = scY * 0.1;
 
+
+    if(btmText < scrollArea) {
+        bottomText1.classList.add('middle');
+        bottomText2.classList.add('middle');
+    }
+    else {
+        bottomText1.classList.remove('middle');
+        bottomText2.classList.remove('middle');
+    }
         
+
+    if(vdo < scrollArea){
+        vidc.classList.add('vdo');
+    } else{
+        vidc.classList.remove('vdo');
+    }
+    if(hit < scrollArea){
+        hITw.classList.add('hitS');
+    } else{
+        hITw.classList.remove('hitS');
+    }
+
 
         if(sec8 - 100 < scrollArea)
         {
