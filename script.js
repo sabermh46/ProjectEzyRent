@@ -39,7 +39,7 @@
     var con7p = document.querySelector('.content7 p');
 
     var pc = window.matchMedia("(min-width: 801px)");
-    var tb = window.matchMedia("(max-width: 800px)");
+    var tb = window.matchMedia("(min-width: 501px)");
     var mb = window.matchMedia("(max-width: 500px)");
 
     function playpause() {
@@ -92,35 +92,37 @@ window.addEventListener('scroll', function() {
         {
             up.style.visibility = 'hidden';
         }
-        if(subSec2h2 < scrollArea * 0.8)
+
+        if(subSec2h2 < scrollArea * 0.9)
         {
             sec2h2.classList.add('sec2h2');
         }
-        else {
+        else if(subSec2h2 > scrollArea) {
             sec2h2.classList.remove('sec2h2');
         }
-        if(subSec3h2 < scrollArea * 0.8)
+
+        if(subSec3h2 < scrollArea * 0.9)
         {
             sec3h2.classList.add('sec2h2');
         }
-        else {
+        else if(subSec3h2 > scrollArea) {
             sec3h2.classList.remove('sec2h2');
         }
-        if(subcon2h1 < scrollArea * 0.8)
+        if(subcon2h1 < scrollArea * 0.9)
         {
             con2h1.classList.add('conh1');
             con2p.classList.add('conP');
         }
-        else {
+        else if(subcon2h1 > scrollArea) {
             con2h1.classList.remove('conh1');
             con2p.classList.remove('conP');
         }
-        if(subcon7h1 < scrollArea * 0.8)
+        if(subcon7h1 < scrollArea * 0.9)
         {
             con7h1.classList.add('conh1');
             con7p.classList.add('conP');
         }
-        else {
+        else if(subcon7h1 > scrollArea) {
             con7h1.classList.remove('conh1');
             con7p.classList.remove('conP');
         }
@@ -215,7 +217,7 @@ window.addEventListener('scroll', function() {
             if(sec6 < scrollArea)
             {
                 var s6e1 = ((sec6-scrollArea)*uTurn)*0.1;
-                console.log(s6e1);
+                console.log('From Pc: '+s6e1);
                 var s6e2 = s6e1*1.8;
                 if(s6e1 < 61){
                     ss1.style.transform = 'translateY(-' + s6e1 + 'px)';
@@ -244,7 +246,7 @@ window.addEventListener('scroll', function() {
             nav.style.padding = '10px 15px';
             nav.style.background = 'black';
         }
-        if(sec2 < scrollArea * 0.8)
+        if(sec2 < scrollArea * 0.9)
         {
             img1.classList.add('image1Add');
             img2.classList.add('image1Add');
@@ -256,7 +258,7 @@ window.addEventListener('scroll', function() {
             img2.classList.remove('image1Add');
             imgBox1.classList.remove('ib-anim');
         }
-        if(sec3 < scrollArea * 0.8)
+        if(sec3 < scrollArea * 0.9)
         {
             img3.classList.add('image1Add');
             img4.classList.add('image1Add');
@@ -266,7 +268,7 @@ window.addEventListener('scroll', function() {
             img3.classList.remove('image1Add');
             img4.classList.remove('image1Add');
         }
-        if(sec6 < scrollArea * 0.8)
+        if(sec6 < scrollArea * 0.9)
         {
             ss1.classList.add('image1Add');
             ss2.classList.add('image1Add');
@@ -276,7 +278,7 @@ window.addEventListener('scroll', function() {
             ss1.classList.remove('image1Add');
             ss2.classList.remove('image1Add');
         }
-        if(sec7 < scrollArea * 0.8)
+        if(sec7 < scrollArea * 0.9)
         {
             img71.classList.add('image1Add');
             img72.classList.add('image1Add');
@@ -426,12 +428,11 @@ window.addEventListener('scroll', function() {
             sec51.style.opacity = 0;
             sec52.style.opacity = 0;
         }
-    }
         var uTurn = -1;
             if(sec6 < scrollArea)
             {
                 var s6e1 = ((sec6-scrollArea)*uTurn)*0.1;
-                console.log(s6e1);
+                console.log('From tb: '+s6e1);
                 var s6e2 = s6e1*1.8;
                 if(s6e1 < 61){
                     ss1.style.transform = 'translateY(-' + s6e1 + 'px)';
@@ -441,15 +442,12 @@ window.addEventListener('scroll', function() {
             if(sec7 < scrollArea-50)
             {
                 var s7e1 = ((sec7-scrollArea)*uTurn)*0.1;
-                console.log(s7e1);
                 var s7e2 = s7e1*4.2;
                 if(s7e1 < 65){
                     img71.style.transform = 'translateY(-' + s7e1 + 'px)';
                     img72.style.transform = 'translateY(-' + s7e2 + 'px)';
                 }
             }
-    
-    
-    
-
+    }
+        
 });
