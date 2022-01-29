@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SoftCar</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../ezytheme.css">
+        <link rel="stylesheet" href="blog.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    </head>
+    <body id="upp">
+        <div class="navigation" id="navigation">
+            <div class="brand" onclick="location.href='#'">
+                SoftCar
+            </div>
+            <div class="links">
+                <a href="#" class="link link0">Blog</a>
+                <a href="#section8" class="link link1"><i class="material-icons blue nav-icon">play_arrow</i>How It Works</a>
+                <div onclick="openModal();">
+                    <a class="link link2">Register Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mod-container" id="modal">
+            <div class="modal">
+                <div class="modal-title">
+                    Welcome to SoftCar
+                </div>
+                <div class="modal-form">
+                    <form action="get" name="rForm">
+                        <div class="form-input">
+                            <span class="label label1">Name</span>
+                            <input placeholder="Enter your name" class="input" type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-input">
+                            <span class="label label2">Email</span>
+                            <input placeholder="Enter your email" class="input" type="email" name="email" id="email" required onkeydown="ValidateEmail();">
+                        </div>
+                        <div class="form-input">
+                            <span class="label label3">Phone Number</span>
+                            <input placeholder="Enter phone number" class="input" type="number" name="phoneNumber" id="phone" required>
+                        </div>
+                        <input class="form-btn" type="button" value="Submit">
+                    </form>
+                </div>
+                <div class="modal-sub">
+                    *One of our agent will contact you shortly.
+                </div>
+                <div onclick="closeModal();" class="modal-close">
+                    <i class="material-icons">close</i>
+                </div>
+            </div>
+        </div>
+
+        <div class="fd12"></div>
+
+
+        <div id="up" class="up" onclick="location.href='#upp';">
+            <i class="material-icons">arrow_upward</i>
+        </div>
+
+        <script src="../script.js"></script>
+    </body>
+</html>

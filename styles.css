@@ -97,6 +97,18 @@ body {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+.links .link0 {
+    height: 55px;
+    width: auto !important;
+    padding: 0 40px;
+    color: white;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.links .link0:hover {
+    color: #4F4FFF;
+}
 .links .link1 {
     color: white;
     border: 2px solid rgb(39, 39, 39);
@@ -755,14 +767,14 @@ body {
 .sec8h11, .sec8h12 {
     position: relative;
     display: block;
-    transform: translateX(-100vw);
+    transform: translateX(-100px);
     opacity: 0;
-    -webkit-transition: 1s cubic-bezier(.75,.28,.42,.42);
-                -o-transition: 1s cubic-bezier(.75,.28,.42,.42);
-                transition: 1s cubic-bezier(.75,.28,.42,.42);
+    -webkit-transition: 1s ease;
+                -o-transition: 1s ease;
+                transition: 1s ease;
 }
 .sec8h12 {
-    transform: translateX(100vw);
+    transform: translateX(100px);
 }
 .middle {
     opacity: 1;
@@ -793,14 +805,6 @@ body {
     background-position: center center;
     background-size: cover;
     position: relative;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.vdo {
-    transform: scaleX(1);
 }
 .frame {
     width: 100%;
