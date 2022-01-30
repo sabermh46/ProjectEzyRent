@@ -24,6 +24,7 @@
     line-height: 167%;
     color: #FFFFFF;
     opacity: 0.62;
+    margin: 5px 0 20px 0;
 }
 .blog-image {
     width: 100%;
@@ -39,4 +40,35 @@
     line-height: 182%;
     color: #FFFFFF;
     opacity: 0.64;
+}
+.footer {
+    color: white;
+    text-align: center;
+    width:100%;
+    height: 450px;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer div {
+    width: 50%;
+}
+.footer h2, .footer h3 {
+    padding: 17px;
+    font-weight: normal;
+}
+.footer p {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 182%;
+    opacity: 0.62;
+}
+.footer div p a {
+    text-decoration: none;
+    color: white;
+}
+.footer div:nth-child(1){
+    margin-bottom: 30px;
 }
