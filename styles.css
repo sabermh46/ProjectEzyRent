@@ -97,6 +97,16 @@ body {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+
+.threeDot {
+    color: white;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
 .links .link0 {
     height: 55px;
     width: auto !important;
@@ -1252,22 +1262,55 @@ body {
         width: 100%;
         margin: 0;
         padding: 40px 15px;
+        overflow-x: hidden;
     }
     .navigation .brand {
         font-size: 22px;
         line-height: 35px;
     }
+    .navigation .links
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: #9494c0;
+        position: fixed;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        -webkit-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transform: translateX(100%);
+    }
     .navigation .links .link {
-        height: 35px;
-        width: 115px;
-        font-size: 12px;
+        margin: 20px;
+    }
+
+    .threeDot {
+        display: block;
+        z-index: 999;
+        -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                -o-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .links .link0 {
+        height: 55px;
+        width: auto !important;
+        padding: 0 40px;
+        color: white;
+        position: relative;
+    }
+    .links .link0:hover {
+        color: #4F4FFF;
     }
     .links .link1 {
-        margin-right: 10px;
-    }
-    .links .link1::before {
-       height: 33px;
-       border-radius: 0;
+        margin-right: 0;
     }
     .fd12 {
         height:100px;

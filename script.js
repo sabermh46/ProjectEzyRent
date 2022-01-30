@@ -98,6 +98,23 @@
         }
     }
 
+    var menu = document.querySelector('.threeDot');
+    var menuIcon = document.querySelector('.threeDot i');
+    var links = document.querySelector('.links');
+    var menuClicked=0;
+    menu.addEventListener('click', ()=> {
+        menuClicked++;
+        if(menuClicked==1){
+            menuIcon.innerHTML = 'close';
+            links.style.transform = 'translateX(0%)';
+        }
+        else{
+            menuIcon.innerHTML = 'menu';
+            links.style.transform = 'translateX(100%)';
+            menuClicked=0;
+        }
+    });
+
 
 window.addEventListener('scroll', function() {
     var sec2 = section2.getBoundingClientRect().top;
