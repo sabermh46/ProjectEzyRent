@@ -1,7 +1,7 @@
 
     
     var pic1 = document.getElementById('pic1');
-    var nav = document.getElementById('navigation');
+    var nav = document.querySelector('.navigation');
     var section2 = document.getElementById('section2');
     var sec2sec2 = document.querySelector('.section2.sec2');
     var brand = document.querySelector('.brand');
