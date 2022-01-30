@@ -58,12 +58,11 @@
             vid.pause();
         }
     }
-    document.getElementById('video').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
+    vid.addEventListener('ended', ()=> {
         icon.innerHTML = 'play_arrow'
-    }
+    });
 
-    const modal = document.getElementById('modal');
+    const modal = document.querySelector('.mod-container');
 
     var isModalOpen = 0;
     function openModal() {
@@ -114,6 +113,19 @@
             menuClicked=0;
         }
     });
+
+    var link = document.querySelectorAll('.link');
+    console.log(link);
+    for (var i=0; i<link.length; i++)
+    {
+        link[i].addEventListener('click', ()=>{
+            menuIcon.innerHTML = 'menu';
+            links.style.transform = 'translateX(100%)';
+            menuClicked=0;
+        });
+    }
+
+
 
 
 window.addEventListener('scroll', function() {
