@@ -9,6 +9,7 @@
 }
 .blog1 {
     width: 57%;
+    min-width: 600px;
     margin-left: 10%;
     color: #fff;
 }
