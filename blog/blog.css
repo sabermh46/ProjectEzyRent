@@ -9,7 +9,7 @@
 }
 .blog1 {
     width: 57%;
-    min-width: 600px;
+
     margin-left: 10%;
     color: #fff;
 }
@@ -40,7 +40,13 @@
     margin: 30px auto;
     line-height: 182%;
     color: #FFFFFF;
+    opacity: 0;
+    transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transform: translateY(50px);
+}
+.bltext {
     opacity: 0.64;
+    transform: translateY(0px);
 }
 .footer {
     color: white;
@@ -72,4 +78,71 @@
 }
 .footer div:nth-child(1){
     margin-bottom: 30px;
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+    .fd12 {
+        height:100px;
+    }
+    .navigation .brand {
+        font-size: 25px !important;
+    }
+    .blog1 {
+        width: 80% !important;
+        min-width: none;
+        margin: 0 auto;
+    }
+    .blog1 h1 {
+        font-size: 3.5vw;
+    }
+    .blog1 .date {
+        font-size: 16px;
+    }
+    .blog-text {
+        font-size: 15px;
+    }
+    .footer div {
+        width: 70%;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+    .footer div:nth-child(1){
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 1px) {
+    .fd12 {
+        height:100px;
+    }
+    .navigation .brand {
+        font-size: 25px !important;
+    }
+    .blog1 {
+        width: 90% !important;
+        min-width: none;
+        margin: 0 auto;
+    }
+    .blog1 h1 {
+        font-size: 25px;
+    }
+    .blog1 .date {
+        font-size: 16px;
+    }
+    .blog-text {
+        font-size: 15px;
+    }
+    .footer div {
+        width: 80%;
+    }
+    .footer {
+        height: 500px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+    .footer div:nth-child(1){
+        margin-bottom: 30px;
+    }
 }
