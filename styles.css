@@ -126,8 +126,7 @@ body {
     border: 2px solid rgb(39, 39, 39);
     margin-right: 30px;
     position: relative;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    overflow: hidden;
 }
 .links .link2 {
     background: transparent;
@@ -1376,8 +1375,8 @@ body {
         height:100px;
     }
     .links .link1::before {
-        width:99%;
-        height: 101%;
+        width:100px;
+        height: 40px;
         -webkit-transform: translateX(0px) scaleX(0);
         transform: translateX(0px) scaleX(0);
       }

@@ -82,17 +82,17 @@
     function ValidateEmail()
     {
         var inputText = document.rForm.email;
-        var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+        var mailformat = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         if(inputText.value.match(mailformat))
         { 
             document.rForm.email.focus();
-            document.querySelector(".label2").style.color = 'gray';
+            document.querySelector(".label2").style.color = '#22bb33';
             return true;
         }
         else
         {
             document.rForm.email.focus();
-            document.querySelector(".label2").style.color = 'red';
+            document.querySelector(".label2").style.color = '#bb2124';
             return false;
         }
     }
