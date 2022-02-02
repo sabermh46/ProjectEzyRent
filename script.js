@@ -96,6 +96,23 @@
             return false;
         }
     }
+    function ValidateName()
+    {
+        var inputName = document.rForm.name;
+        var Nameformat = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        if(inputName.value.match(Nameformat))
+        { 
+            document.rForm.name.focus();
+            document.querySelector(".label1").style.color = '#22bb33';
+            return true;
+        }
+        else
+        {
+            document.rForm.name.focus();
+            document.querySelector(".label1").style.color = '#bb2124';
+            return false;
+        }
+    }
 
     /*
 
