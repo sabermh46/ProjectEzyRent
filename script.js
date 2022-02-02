@@ -97,6 +97,8 @@
         }
     }
 
+    /*
+
     if(mb.matches){
         var menu = document.querySelector('.threeDot');
         var menuIcon = document.querySelector('.threeDot i');
@@ -125,6 +127,7 @@
             });
         }
     }
+    */
 
 
 

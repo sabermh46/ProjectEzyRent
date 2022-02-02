@@ -1,8 +1,9 @@
 .navigation {
-    padding: 7px 10%;
+    padding: 7px 20px !important;
 }
 .navigation .brand {
-    font-size: 30px !important;
+    font-size: 25px !important;
+    line-height: 45px;
 }
 .fd12 {
     height:100px;
@@ -40,9 +41,7 @@
     margin: 30px auto;
     line-height: 182%;
     color: #FFFFFF;
-    opacity: 0;
     transition: 0.5s cubic-bezier(0.215, 0.610, 0.355, 1);
-    transform: translateY(50px);
 }
 .bltext {
     opacity: 0.64;
