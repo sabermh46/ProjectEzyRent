@@ -1332,7 +1332,10 @@ body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-                flex-direction: row;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -1374,13 +1377,13 @@ body {
     .fd12 {
         height:100px;
     }
-    .links .link1::before {
+    .links .link1:before {
         width:100px;
         height: 40px;
         -webkit-transform: translateX(0px) scaleX(0);
         transform: translateX(0px) scaleX(0);
       }
-      .links .link1:hover::before {
+      .links .link1:hover:before {
         -webkit-transform: translateX(0px) scaleX(1);
         transform: translateX(0px) scaleX(1);
       }
@@ -1645,9 +1648,16 @@ body {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             padding-left: 0;
             padding-top: 20px;
         }
