@@ -1319,7 +1319,7 @@ body {
     .navigation {
         width: 100%;
         margin: 0;
-        padding: 40px 15px;
+        padding: 40px 10px;
     }
     .navigation .brand {
         font-size: 25px;
@@ -1375,6 +1375,16 @@ body {
     .fd12 {
         height:100px;
     }
+    .links .link1::before {
+        width:inherit;
+        height: 101%;
+        -webkit-transform: translateX(-2px) scaleX(0);
+        transform: translateX(-2px) scaleX(0);
+      }
+      .links .link1:hover::before {
+        -webkit-transform: translateX(-2px) scaleX(1);
+        transform: translateX(-2px) scaleX(1);
+      }
     .section1 {
         width: 80%;
         margin: 0 auto;

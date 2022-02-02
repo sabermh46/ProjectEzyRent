@@ -330,11 +330,11 @@ window.addEventListener('scroll', function() {
     else if(mb.matches){
         if(scrollNav <= 6.3333)
         {
-            nav.style.padding = 40 - scrollNav*3 + 'px 15px';
+            nav.style.padding = 40 - scrollNav*3 + 'px 10px';
         }
         else if(scrollNav > 6.333)
         {
-            nav.style.padding = '10px 15px';
+            nav.style.padding = '10px 10px';
             nav.style.background = 'black';
         }
         if(sec2 < scrollArea * 0.9)
