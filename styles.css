@@ -554,7 +554,7 @@ body {
     -webkit-transform-origin: 75% 100%;
             transform-origin: 75% 100%;
     top: 40% !important;
-    left: -5% !important;
+    left: -4% !important;
 }
 .item3 {
     top: 34% !important;
@@ -1819,6 +1819,10 @@ body {
     }
     .fd2t3 {
         height: 250px;
+    }
+    .tooltip div {
+        font-size: 9px;
+        padding-bottom: 7px;
     }
     .image1Add {
         -webkit-transform: translateY(0px);
