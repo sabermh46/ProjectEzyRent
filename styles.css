@@ -1005,7 +1005,7 @@ body {
 }
 .modal { 
     width: 32%;
-    min-width: 380px;
+    min-width: 350px;
     height: auto;
     background: rgb(255, 255, 255);
     padding: 25px;
@@ -1341,13 +1341,13 @@ body {
     }
     .navigation .links .link {
         margin: 0px;
-        font-size: 16px;
+        font-size: 13px !important;
         height: 40px;
         width: 100px;
         margin: 4px;
     }
-    .navigation .links .link1, .blue {
-        font-size: 14px !important;
+    .blue {
+        font-size: 13px !important;
     }
 
     /*
