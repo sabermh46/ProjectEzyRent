@@ -1376,14 +1376,14 @@ body {
         height:100px;
     }
     .links .link1::before {
-        width:inherit;
+        width:99%;
         height: 101%;
-        -webkit-transform: translateX(-2px) scaleX(0);
-        transform: translateX(-2px) scaleX(0);
+        -webkit-transform: translateX(0px) scaleX(0);
+        transform: translateX(0px) scaleX(0);
       }
       .links .link1:hover::before {
-        -webkit-transform: translateX(-2px) scaleX(1);
-        transform: translateX(-2px) scaleX(1);
+        -webkit-transform: translateX(0px) scaleX(1);
+        transform: translateX(0px) scaleX(1);
       }
     .section1 {
         width: 80%;
