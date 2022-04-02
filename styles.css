@@ -913,6 +913,52 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
+.blog-container {
+    width: 100%;
+    padding: 80px 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-image {
+    background: url(pic/Rectangle\ 211car3.png);
+    aspect-ratio: 1 !important;
+    width: 50%;
+    background-size: cover;
+    border-radius: 8px;
+}
+.blog-content {
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+.blog-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 0 !important;
+    text-transform: capitalize;
+    line-height: 123%;
+    color: #FFFFFF;
+}
+.blog-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.72;
+    padding: 30px 0 30px 0;
+}
+.blog-content > button {
+    width: 40% !important;
+}
+
+
+
 .up {
     height: 45px;
     aspect-ratio: 1;
