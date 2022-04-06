@@ -6,24 +6,19 @@
     var sec2sec2 = document.querySelector('.section2.sec2');
     var brand = document.querySelector('.brand');
     var imgBox1 = document.querySelector('.image-box');
-    var section3 = document.getElementById('section3');
     var section4 = document.getElementById('section4');
     var section5 = document.getElementById('section5');
     var section6 = document.getElementById('section6');
-    var section7 = document.getElementById('section7');
     var section8 = document.getElementById('section8');
     var item1 = document.getElementById('item1');
     var item2 = document.getElementById('item2');
     var item3 = document.getElementById('item3');
     var item4 = document.getElementById('item4');
     var img1 = document.getElementById('image1');
-    var img2 = document.getElementById('image2');
     var img3 = document.getElementById('image11');
     var img4 = document.getElementById('image12');
     var ss1 = document.getElementById('ss1');
     var ss2 = document.getElementById('ss2');
-    var img71 = document.getElementById('image71');
-    var img72 = document.getElementById('image72');
     var part51 = document.getElementById('sec51');
     var part52 = document.getElementById('sec52');
     var scrollArea = window.innerHeight;
@@ -33,7 +28,6 @@
     var icon = document.getElementById('icon');
     var ctrl = document.getElementById('ctrl');
     var sec2h2 = document.querySelector('.section2 h2');
-    var sec3h2 = document.querySelector('.section3 h2');
     var con2h1 = document.querySelector('.content2 h1');
     var con7h1 = document.querySelector('.content7 h1');
     var con2p = document.querySelector('.content2 p');
@@ -151,16 +145,12 @@
 
 window.addEventListener('scroll', function() {
     var sec2 = section2.getBoundingClientRect().top;
-    var sec3 = section3.getBoundingClientRect().top;
     var sec4 = section4.getBoundingClientRect().top;
     var sec5 = section5.getBoundingClientRect().top;
     var sec6 = section6.getBoundingClientRect().top;
-    var sec7 = section7.getBoundingClientRect().top;
     var sec8 = section8.getBoundingClientRect().top;
     var subSec2h2 = sec2h2.getBoundingClientRect().top;
-    var subSec3h2 = sec3h2.getBoundingClientRect().top;
     var subcon2h1 = con2h1.getBoundingClientRect().top;
-    var subcon7h1 = con7h1.getBoundingClientRect().top;
     var btmText = bottomText1.getBoundingClientRect().top;
     var vdo = vid.getBoundingClientRect().top;
     var hit = hITw.getBoundingClientRect().top;
@@ -209,13 +199,6 @@ window.addEventListener('scroll', function() {
             sec2h2.classList.remove('sec2h2');
         }
 
-        if(subSec3h2 < scrollArea * 0.9)
-        {
-            sec3h2.classList.add('sec2h2');
-        }
-        else if(subSec3h2 > scrollArea) {
-            sec3h2.classList.remove('sec2h2');
-        }
         if(subcon2h1 < scrollArea * 0.9)
         {
             con2h1.classList.add('conh1');
@@ -224,15 +207,6 @@ window.addEventListener('scroll', function() {
         else if(subcon2h1 > scrollArea) {
             con2h1.classList.remove('conh1');
             con2p.classList.remove('conP');
-        }
-        if(subcon7h1 < scrollArea * 0.9)
-        {
-            con7h1.classList.add('conh1');
-            con7p.classList.add('conP');
-        }
-        else if(subcon7h1 > scrollArea) {
-            con7h1.classList.remove('conh1');
-            con7p.classList.remove('conP');
         }
         
     if(pc.matches){
@@ -250,24 +224,10 @@ window.addEventListener('scroll', function() {
         {
             var ev1 = ev*1.2;
             section2.style.opacity = 1;
-            img2.style.transform = 'translateY(-' + ev1 + 'px)';
         }
         else
         {
             section2.style.opacity = 1;
-        }
-
-        var ev3 = (2000 - sec3)*0.1;
-
-        if(sec3 < 800)
-        {
-            var ev13 = ev3*1.2;
-            section2.style.opacity = 1;
-            img3.style.transform = 'translateY(-' + ev13 + 'px)';
-        }
-        else
-        {
-            section3.style.opacity = 1;
         }
 
         if(sec4 < scrollArea)
@@ -332,16 +292,6 @@ window.addEventListener('scroll', function() {
                     ss2.style.transform = 'translateY(-' + s6e2 + 'px)';
                 }
             }    
-            if(sec7 < scrollArea-50)
-            {
-                var s7e1 = ((sec7-scrollArea)*uTurn)*0.1;
-                console.log(s7e1);
-                var s7e2 = s7e1*4.2;
-                if(s7e1 < 65){
-                    img71.style.transform = 'translateY(-' + s7e1 + 'px)';
-                    img72.style.transform = 'translateY(-' + s7e2 + 'px)';
-                }
-            }
 
     }
     else if(mb.matches){
@@ -366,16 +316,6 @@ window.addEventListener('scroll', function() {
             img2.classList.remove('image1Add');
             imgBox1.classList.remove('ib-anim');
         }
-        if(sec3 < scrollArea * 0.9)
-        {
-            img3.classList.add('image1Add');
-            img4.classList.add('image1Add');
-        }
-        else
-        {
-            img3.classList.remove('image1Add');
-            img4.classList.remove('image1Add');
-        }
         if(sec6 < scrollArea * 0.9)
         {
             ss1.classList.add('image1Add');
@@ -385,16 +325,6 @@ window.addEventListener('scroll', function() {
         {
             ss1.classList.remove('image1Add');
             ss2.classList.remove('image1Add');
-        }
-        if(sec7 < scrollArea * 0.9)
-        {
-            img71.classList.add('image1Add');
-            img72.classList.add('image1Add');
-        }
-        else
-        {
-            img71.classList.remove('image1Add');
-            img72.classList.remove('image1Add');
         }
         
 
@@ -473,18 +403,6 @@ window.addEventListener('scroll', function() {
             section2.style.opacity = 1;
         }
 
-        var ev3 = (1900 - sec3)*0.1;
-
-        if(sec3 < scrollArea)
-        {
-            var ev13 = ev3 - 50;
-            section2.style.opacity = 1;
-            img3.style.transform = 'translateY(-' + ev13 + 'px)';
-        }
-        else
-        {
-            section3.style.opacity = 1;
-        }
         var sec4ev = (3000 - sec4)*0.1;
         if(sec4 < 600)
         {
@@ -547,15 +465,7 @@ window.addEventListener('scroll', function() {
                     ss2.style.transform = 'translateY(-' + s6e2 + 'px)';
                 }
             }    
-            if(sec7 < scrollArea-50)
-            {
-                var s7e1 = ((sec7-scrollArea)*uTurn)*0.1;
-                var s7e2 = s7e1*4.2;
-                if(s7e1 < 65){
-                    img71.style.transform = 'translateY(-' + s7e1 + 'px)';
-                    img72.style.transform = 'translateY(-' + s7e2 + 'px)';
-                }
-            }
+            
     }
         
 });

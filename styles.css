@@ -200,6 +200,7 @@ body {
 .section1 {
     width: 80%;
     margin: 0 auto;
+    padding-top: 100px;
 }
 .first {
     width: 40%;
@@ -210,7 +211,6 @@ body {
     top: 80px;
     height: 500px;
     margin: 0 auto;
-    padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,12 +222,11 @@ body {
 
 .first h1 {
     font-weight: 500;
-    font-size: 4vw;
-    line-height: 107%;
+    font-size: 3.2vw;
+    line-height: 137%;
     letter-spacing: -1px;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
     opacity: 1;
+    padding-right: 10px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     color: #FFFFFF;
     -webkit-animation: Fh1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
@@ -256,12 +255,12 @@ body {
     
 }
 .first p {
-    font-size: 1.3vw;
-    line-height: 182%;
+    font-size: 1.5vw;
+    line-height: 156%;
     color: #FFFFFF;
     opacity: 0.72;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=72)";
-    padding-top: 40px;
+    padding-top: 30px;
     padding-right: 25px;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
@@ -290,7 +289,6 @@ body {
 .first2 {
     width: 60%;
     height: 800px;
-    padding-top: 100px;
 }
 
 .pic1 {
@@ -737,74 +735,6 @@ body {
 }
 .ss2 {
     left: 30%;
-}
-.section7.sec1{
-    width: 50%;
-    position: -webkit-sticky;
-    position: sticky;
-    margin: 0 auto;
-    top: 100px;
-    height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-.section7.sec2 {
-    width: 50%;
-    height: 800px;
-    padding-top: 200px;
-}
-.dummy7 {
-    height: 100vh;
-}
-.content7 {
-    width: 60%;
-    margin: 0 auto;
-    color: white;
-}
-.double-img7 {
-    z-index: 50;
-    position: relative;
-    margin-right: 20%;
-    margin-bottom: 30px;
-}
-.image-box7 {
-    right: 0;
-    width: 50vw;
-    aspect-ratio: 1.78;
-    background: #141414;
-    border-radius: 8px 0 0 8px;
-}
-.image71 {
-    background: url('pic/pic10.png');
-    width: 18vw;
-    height: 25.7vw;
-    background-position: left center;
-    margin-top: 50%;
-}
-.image72 {
-    background: url('pic/pic11.png');
-    width: 18vw;
-    aspect-ratio: 0.445;
-    margin-right: 20px;
-    background-position: center center;
-}
-.image71, .image72 {
-    background-size: cover; 
-    z-index: 10;
-    margin: 12px;
-    -webkit-filter: drop-shadow(10px 14px 74px #010101);
-            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="74" /><feOffset dx="11" dy="15" result="offsetblur" /><feFlood flood-color="rgba(1,1,1,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-            filter: drop-shadow(10px 14px 74px #010101);
-            filter: progid:DXImageTransform.Microsoft.Glow(color=#010101,strength=0) progid:DXImageTransform.Microsoft.Shadow(color=#010101,strength=0);
-    border-radius: 8px;
 }
 
 
