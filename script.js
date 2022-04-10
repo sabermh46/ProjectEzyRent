@@ -14,7 +14,6 @@
     var item2 = document.getElementById('item2');
     var item3 = document.getElementById('item3');
     var item4 = document.getElementById('item4');
-    var img1 = document.getElementById('image1');
     var img3 = document.getElementById('image11');
     var img4 = document.getElementById('image12');
     var ss1 = document.getElementById('ss1');
@@ -304,18 +303,6 @@ window.addEventListener('scroll', function() {
             nav.style.padding = '10px 10px';
             nav.style.background = 'black';
         }
-        if(sec2 < scrollArea * 0.9)
-        {
-            img1.classList.add('image1Add');
-            img2.classList.add('image1Add');
-            imgBox1.classList.add('ib-anim');
-        }
-        else
-        {
-            img1.classList.remove('image1Add');
-            img2.classList.remove('image1Add');
-            imgBox1.classList.remove('ib-anim');
-        }
         if(sec6 < scrollArea * 0.9)
         {
             ss1.classList.add('image1Add');
@@ -396,7 +383,6 @@ window.addEventListener('scroll', function() {
         {
             var ev1 = ev*1.2;
             section2.style.opacity = 1;
-            img2.style.transform = 'translateY(-' + ev1 + 'px)';
         }
         else
         {

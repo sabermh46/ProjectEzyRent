@@ -329,16 +329,23 @@ body {
 }
 .section2.sec1 {
     width: 50%;
-    padding-top: 250px;
     height: 900px;
+    position: relative;
+}
+.sec1 > .image {
+    background: url(./pic/pic2.png);
+    aspect-ratio: 1.34;
+    width: 80%;
+    background-size: cover;
+    border-radius: 8px;
+    margin-left: 20%;
 }
 .section2.sec2 {
     position: -webkit-sticky;
     position: sticky;
     margin: 0 auto;
-    top: 80px;
-    height: 500px;
-    padding-top: 100px;
+    top: 110px;
+    height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,19 +354,13 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
 }
-.double-img {
-    z-index: 30;
-    position: relative;
-    margin-left: 8%;
-}
 .section2 h2 {
     color: white;
     z-index: 40;
     width: 80%;
-    font-size: 35px;
     margin: 0 auto;
     font-weight: 500;
-    font-size: 3.8vw;
+    font-size: 3.4vw;
     line-height: 221%;
     letter-spacing: -0.5px;
     opacity: 0;
@@ -369,88 +370,32 @@ body {
     -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                 transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.image1 {
-    background: url('pic/pic2.png');
-    width: 20vw;
-    aspect-ratio: 0.68;
-    -webkit-transform: translateY(-120px);
-            transform: translateY(-120px);
-    margin-bottom: 30px;
-}
-.image2 {
-    background: url('pic/pic3.png');
-    width: 18vw;
-    aspect-ratio: 0.6;
-    margin-left: 20px;
-}
-.image1, .image2 {
-    background-size: cover;
-    background-position: center center;
-    z-index: 10;
-    margin: 10px;
-    -webkit-filter: drop-shadow(10px 14px 74px #010101);
-            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="74" /><feOffset dx="11" dy="15" result="offsetblur" /><feFlood flood-color="rgba(1,1,1,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-            filter: drop-shadow(10px 14px 74px #010101);
-            filter: progid:DXImageTransform.Microsoft.Glow(color=#010101,strength=0) progid:DXImageTransform.Microsoft.Shadow(color=#010101,strength=0);
-    border-radius: 8px;
+.section2.sec2 p {
+    font-size: 1.5vw;
+    line-height: 156%;
+    color: #FFFFFF;
+    opacity: 0.72;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=72)";
+    padding-top: 30px;
+    padding-right: 19%;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation: Fp 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
+            animation: Fp 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1;
 }
 .image-box {
+    top:150px;
     width: 45vw;
     aspect-ratio: 1.64;
     background: #141414;
     border-radius: 0 8px 8px 0;
+    z-index: -1;
 }
 
 .fd33 {
     height: 200px;
-}
-.section3 {
-    width: 50%;
-}
-.section3.sec1 {
-    position: -webkit-sticky;
-    position: sticky;
-    margin: 0 auto;
-    top: 80px;
-    height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-.section3.sec2 {
-    padding-top: 350px;
-    height: 900px;
-}
-.double-img2 {
-    z-index: 30;
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-15%);
-            transform: translateX(-15%);
-    margin-bottom: 30px;
-}
-.section3 h2 {
-    color: white;
-    z-index: 40;
-    width: 55%;
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 3.5vw;
-    line-height: 0%;
-    letter-spacing: -0.5px;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    -webkit-transform: translateY(90px);
-            transform: translateY(90px);
-    -webkit-transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-                transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .sec2h2 {
     opacity: 0.94 !important;
@@ -459,41 +404,6 @@ body {
     -webkit-transform: translateY(0px) !important;
             transform: translateY(0px) !important;
 }
-.image11 {
-    background: url('pic/pic4.png');
-    width: 20vw;
-    aspect-ratio: 0.68;
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
-    background-position: center center;
-}
-.image12 {
-    background: url('pic/pic5.png');
-    width: 25vw;
-    aspect-ratio: 0.856;
-    margin-right: 20px;
-    -webkit-transform: translateY(-130px);
-            transform: translateY(-130px);
-    background-position: center right;
-}
-.image11, .image12 {
-    background-size: cover; 
-    z-index: 10;
-    margin: 10px;
-    -webkit-filter: drop-shadow(10px 14px 74px #010101);
-            filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="74" /><feOffset dx="11" dy="15" result="offsetblur" /><feFlood flood-color="rgba(1,1,1,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-            filter: drop-shadow(10px 14px 74px #010101);
-            filter: progid:DXImageTransform.Microsoft.Glow(color=#010101,strength=0) progid:DXImageTransform.Microsoft.Shadow(color=#010101,strength=0);
-    border-radius: 8px;
-}
-.image-box2 {
-    right: 0;
-    width: 50vw;
-    aspect-ratio: 1.78;
-    background: #141414;
-    border-radius: 8px 0 0 8px;
-}
-
 
 
 .section4 {
@@ -564,8 +474,11 @@ body {
 
 
 #section5 {
+    position: relative;
     overflow-x: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    padding: 70px;
+    background: #141414;
 }
 .section5 {
     width: 50%;
@@ -884,7 +797,7 @@ body {
     padding: 30px 0 30px 0;
 }
 .blog-content > button {
-    width: 40% !important;
+    width: 50% !important;
 }
 
 
